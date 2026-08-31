@@ -24,11 +24,8 @@ const ALL_PACKAGES = [
 ];
 
 export interface EnquiryContext {
-  /** Pre-selected destination in the dropdown */
   defaultDestination?: string;
-  /** Page-specific packages to show instead of all */
   packages?: string[];
-  /** Page-specific interests to show */
   interests?: string[];
 }
 
@@ -63,8 +60,10 @@ export default function EnquiryForm({
   className?: string;
   context?: EnquiryContext;
 }) {
+  const hasDestination = !!context?.defaultDestination;
+  const hasPackages = !!context?.packages;
+
   const interests = context?.interests || ALL_INTERESTS;
-  const destinations = ALL_DESTINATIONS;
   const packages = context?.packages || ALL_PACKAGES;
 
   const [form, setForm] = useState<FormData>({
@@ -80,15 +79,17 @@ export default function EnquiryForm({
   const recipient = getRecipient(form.interest);
 
   const buildMessage = (): string => {
+    const dest = context?.defaultDestination || form.destination;
+    const pkg = form.package;
     const lines = [
       `*New Enquiry — Ooty Vacation Tours & Travels*`,
       ``,
-      `*What I need:* ${form.interest}`,
+      `*What I need:* ${form.interest || "Tour Info"}`,
+      `*Destination:* ${dest || "N/A"}`,
+      pkg ? `*Package:* ${pkg}` : null,
       `*Name:* ${form.fullName}`,
       `*Phone:* ${form.phone}`,
       form.email ? `*Email:* ${form.email}` : null,
-      form.destination ? `*Destination:* ${form.destination}` : null,
-      form.package ? `*Package:* ${form.package}` : null,
       form.travelDate ? `*Travel Date:* ${form.travelDate}` : null,
       form.adults ? `*Adults:* ${form.adults}` : null,
       form.children ? `*Children:* ${form.children}` : null,
@@ -110,8 +111,12 @@ export default function EnquiryForm({
         <Input label="Phone / WhatsApp" value={form.phone} onChange={(v) => update("phone", v)} type="tel" required />
         <Select label="What do you need?" value={form.interest} onChange={(v) => update("interest", v)} options={interests} />
         <Input label="Email (optional)" value={form.email} onChange={(v) => update("email", v)} type="email" />
-        <Select label="Where do you want to go?" value={form.destination} onChange={(v) => update("destination", v)} options={destinations} />
-        <Select label="Package Interest" value={form.package} onChange={(v) => update("package", v)} options={packages} />
+        {hasPackages && (
+          <Select label="Package Interest" value={form.package} onChange={(v) => update("package", v)} options={packages} />
+        )}
+        {!hasDestination && (
+          <Select label="Where do you want to go?" value={form.destination} onChange={(v) => update("destination", v)} options={ALL_DESTINATIONS} />
+        )}
         <Input label="Preferred Travel Date" value={form.travelDate} onChange={(v) => update("travelDate", v)} type="date" />
         <div className="grid grid-cols-2 gap-3">
           <Input label="Adults" value={form.adults} onChange={(v) => update("adults", v)} type="number" min="1" />
