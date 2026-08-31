@@ -103,7 +103,22 @@ export default function OotyTourPackages() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-stone-900 mb-8 text-center">Enquire for Ooty Package</h2>
-          <EnquiryForm />
+          <EnquiryForm
+            context={{
+              defaultDestination: "Ooty",
+              packages: [
+                "Ooty 2D/1N Package",
+                "Ooty 2-Day Complete",
+                "Ooty 3D/2N Package",
+                "Ooty 4D/3N Package",
+                "Ooty & Kodaikanal 5D/4N",
+                "Ooty & Wayanad 5D/4N",
+                "Ooty & Mysore 5D/4N",
+                "Custom Package",
+                "Not Sure Yet",
+              ],
+            }}
+          />
         </div>
       </section>
     </PageLayout>

@@ -74,7 +74,18 @@ export default function WayanadTourPackages() {
       <section className="py-16 bg-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-stone-900 mb-8 text-center">Enquire for Wayanad Package</h2>
-          <EnquiryForm />
+          <EnquiryForm
+            context={{
+              defaultDestination: "Wayanad",
+              packages: [
+                "Wayanad Sightseeing Day Trip",
+                "Ooty & Wayanad 5D/4N",
+                "Calicut to Wayanad",
+                "Custom Wayanad Package",
+                "Not Sure Yet",
+              ],
+            }}
+          />
         </div>
       </section>
 

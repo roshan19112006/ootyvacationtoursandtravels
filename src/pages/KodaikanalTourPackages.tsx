@@ -74,7 +74,18 @@ export default function KodaikanalTourPackages() {
       <section className="py-16 bg-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-stone-900 mb-8 text-center">Enquire for Kodaikanal Package</h2>
-          <EnquiryForm />
+          <EnquiryForm
+            context={{
+              defaultDestination: "Kodaikanal",
+              packages: [
+                "Kodaikanal Sightseeing Day Trip",
+                "Ooty & Kodaikanal 5D/4N",
+                "Coimbatore to Kodaikanal",
+                "Custom Kodaikanal Package",
+                "Not Sure Yet",
+              ],
+            }}
+          />
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Send, Phone } from "lucide-react";
 import { CONTACTS, whatsappLink, callLink } from "@/data/siteData";
 
-const INTERESTS = [
+const ALL_INTERESTS = [
   "Tour Package",
   "Sightseeing",
   "Auto Service",
@@ -12,18 +12,26 @@ const INTERESTS = [
   "Custom Trip",
 ];
 
-const DESTINATIONS = [
+const ALL_DESTINATIONS = [
   "Ooty", "Coonoor", "Pykara", "Avalanche", "Mudumalai", "Kodaikanal",
   "Wayanad", "Mysore", "Coorg", "Custom Trip",
 ];
 
-const PACKAGES_LIST = [
+const ALL_PACKAGES = [
   "Ooty 2D/1N Package", "Ooty 3D/2N Package", "Ooty 4D/3N Package",
   "Ooty & Kodaikanal 5D/4N", "Ooty & Wayanad 5D/4N",
   "Ooty & Mysore 5D/4N", "Not Sure Yet",
 ];
 
-// Route enquiry to the right contact based on interest
+export interface EnquiryContext {
+  /** Pre-selected destination in the dropdown */
+  defaultDestination?: string;
+  /** Page-specific packages to show instead of all */
+  packages?: string[];
+  /** Page-specific interests to show */
+  interests?: string[];
+}
+
 function getRecipient(interest: string): { phone: string; label: string } {
   switch (interest) {
     case "Auto Service":
@@ -48,13 +56,23 @@ interface FormData {
   message: string;
 }
 
-const INITIAL: FormData = {
-  fullName: "", phone: "", email: "", interest: "", travelDate: "",
-  adults: "", children: "", destination: "", package: "", message: "",
-};
+export default function EnquiryForm({
+  className = "",
+  context,
+}: {
+  className?: string;
+  context?: EnquiryContext;
+}) {
+  const interests = context?.interests || ALL_INTERESTS;
+  const destinations = ALL_DESTINATIONS;
+  const packages = context?.packages || ALL_PACKAGES;
 
-export default function EnquiryForm({ className = "" }: { className?: string }) {
-  const [form, setForm] = useState<FormData>(INITIAL);
+  const [form, setForm] = useState<FormData>({
+    fullName: "", phone: "", email: "", interest: "", travelDate: "",
+    adults: "", children: "",
+    destination: context?.defaultDestination || "",
+    package: "", message: "",
+  });
 
   const update = (field: keyof FormData, value: string) =>
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -90,10 +108,10 @@ export default function EnquiryForm({ className = "" }: { className?: string }) 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input label="Your Name" value={form.fullName} onChange={(v) => update("fullName", v)} required />
         <Input label="Phone / WhatsApp" value={form.phone} onChange={(v) => update("phone", v)} type="tel" required />
-        <Select label="What do you need?" value={form.interest} onChange={(v) => update("interest", v)} options={INTERESTS} />
+        <Select label="What do you need?" value={form.interest} onChange={(v) => update("interest", v)} options={interests} />
         <Input label="Email (optional)" value={form.email} onChange={(v) => update("email", v)} type="email" />
-        <Select label="Where do you want to go?" value={form.destination} onChange={(v) => update("destination", v)} options={DESTINATIONS} />
-        <Select label="Package Interest" value={form.package} onChange={(v) => update("package", v)} options={PACKAGES_LIST} />
+        <Select label="Where do you want to go?" value={form.destination} onChange={(v) => update("destination", v)} options={destinations} />
+        <Select label="Package Interest" value={form.package} onChange={(v) => update("package", v)} options={packages} />
         <Input label="Preferred Travel Date" value={form.travelDate} onChange={(v) => update("travelDate", v)} type="date" />
         <div className="grid grid-cols-2 gap-3">
           <Input label="Adults" value={form.adults} onChange={(v) => update("adults", v)} type="number" min="1" />
