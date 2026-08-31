@@ -4,39 +4,30 @@ import { CONTACTS, whatsappLink, callLink } from "@/data/siteData";
 
 const DESTINATIONS = [
   "Ooty", "Coonoor", "Pykara", "Avalanche", "Mudumalai", "Kodaikanal",
-  "Wayanad", "Mysore", "Coorg", "Bangalore", "Coimbatore",
-  "Rameshwaram", "Chennai", "Madurai", "Custom Trip",
+  "Wayanad", "Mysore", "Coorg", "Custom Trip",
 ];
 
 const PACKAGES_LIST = [
-  "Ooty 2D/1N Package", "Ooty 2-Day Complete", "Ooty 3D/2N Package",
-  "Ooty 4D/3N Package", "Ooty & Kodaikanal 5D/4N", "Ooty & Wayanad 5D/4N",
+  "Ooty 2D/1N Package", "Ooty 3D/2N Package", "Ooty 4D/3N Package",
+  "Ooty & Kodaikanal 5D/4N", "Ooty & Wayanad 5D/4N",
   "Ooty & Mysore 5D/4N", "Custom Package",
 ];
-
-const VEHICLES = ["Sedan", "SUV", "Tempo Traveller", "Innova", "Need Help Choosing"];
 
 interface FormData {
   fullName: string;
   phone: string;
-  whatsapp: string;
   email: string;
   travelDate: string;
   adults: string;
   children: string;
-  pickup: string;
-  drop: string;
   destination: string;
   package: string;
-  days: string;
-  vehicle: string;
   message: string;
 }
 
 const INITIAL: FormData = {
-  fullName: "", phone: "", whatsapp: "", email: "", travelDate: "",
-  adults: "", children: "", pickup: "", drop: "", destination: "",
-  package: "", days: "", vehicle: "", message: "",
+  fullName: "", phone: "", email: "", travelDate: "",
+  adults: "", children: "", destination: "", package: "", message: "",
 };
 
 export default function EnquiryForm({ className = "" }: { className?: string }) {
@@ -47,23 +38,18 @@ export default function EnquiryForm({ className = "" }: { className?: string }) 
 
   const buildMessage = (): string => {
     const lines = [
-      `*New Enquiry from Ooty Vacation Tours & Travels Website*`,
+      `*New Enquiry — Ooty Vacation Tours & Travels*`,
       ``,
-      `*Name:* ${form.fullName || "N/A"}`,
-      `*Phone:* ${form.phone || "N/A"}`,
-      `*WhatsApp:* ${form.whatsapp || "N/A"}`,
-      `*Email:* ${form.email || "N/A"}`,
-      `*Travel Date:* ${form.travelDate || "N/A"}`,
-      `*Adults:* ${form.adults || "N/A"}`,
-      `*Children:* ${form.children || "N/A"}`,
-      `*Pickup Location:* ${form.pickup || "N/A"}`,
-      `*Drop Location:* ${form.drop || "N/A"}`,
-      `*Destination:* ${form.destination || "N/A"}`,
-      `*Package:* ${form.package || "N/A"}`,
-      `*Number of Days:* ${form.days || "N/A"}`,
-      `*Vehicle Requirement:* ${form.vehicle || "N/A"}`,
-      `*Message:* ${form.message || "N/A"}`,
-    ];
+      `*Name:* ${form.fullName}`,
+      `*Phone:* ${form.phone}`,
+      form.email ? `*Email:* ${form.email}` : null,
+      form.travelDate ? `*Travel Date:* ${form.travelDate}` : null,
+      form.adults ? `*Adults:* ${form.adults}` : null,
+      form.children ? `*Children:* ${form.children}` : null,
+      form.destination ? `*Destination:* ${form.destination}` : null,
+      form.package ? `*Package:* ${form.package}` : null,
+      form.message ? `*Message:* ${form.message}` : null,
+    ].filter(Boolean);
     return lines.join("\n");
   };
 
@@ -76,28 +62,23 @@ export default function EnquiryForm({ className = "" }: { className?: string }) 
   return (
     <form onSubmit={handleSubmit} className={`space-y-4 ${className}`}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <Input label="Full Name" value={form.fullName} onChange={(v) => update("fullName", v)} required />
-        <Input label="Phone Number" value={form.phone} onChange={(v) => update("phone", v)} type="tel" required />
-        <Input label="WhatsApp Number" value={form.whatsapp} onChange={(v) => update("whatsapp", v)} type="tel" />
-        <Input label="Email" value={form.email} onChange={(v) => update("email", v)} type="email" />
-        <Input label="Travel Date" value={form.travelDate} onChange={(v) => update("travelDate", v)} type="date" />
-        <Input label="Number of Adults" value={form.adults} onChange={(v) => update("adults", v)} type="number" min="1" />
-        <Input label="Number of Children" value={form.children} onChange={(v) => update("children", v)} type="number" min="0" />
-        <Input label="Pickup Location" value={form.pickup} onChange={(v) => update("pickup", v)} />
-        <Input label="Drop Location" value={form.drop} onChange={(v) => update("drop", v)} />
-        <Select label="Select Destination" value={form.destination} onChange={(v) => update("destination", v)} options={DESTINATIONS} />
-        <Select label="Select Package" value={form.package} onChange={(v) => update("package", v)} options={PACKAGES_LIST} />
-        <Input label="Number of Days" value={form.days} onChange={(v) => update("days", v)} type="number" min="1" />
+        <Input label="Your Name" value={form.fullName} onChange={(v) => update("fullName", v)} required />
+        <Input label="Phone / WhatsApp" value={form.phone} onChange={(v) => update("phone", v)} type="tel" required />
+        <Input label="Email (optional)" value={form.email} onChange={(v) => update("email", v)} type="email" />
+        <Input label="Preferred Travel Date" value={form.travelDate} onChange={(v) => update("travelDate", v)} type="date" />
+        <Select label="Where do you want to go?" value={form.destination} onChange={(v) => update("destination", v)} options={DESTINATIONS} />
+        <Select label="Package Interest" value={form.package} onChange={(v) => update("package", v)} options={PACKAGES_LIST} />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <Select label="Vehicle Requirement" value={form.vehicle} onChange={(v) => update("vehicle", v)} options={VEHICLES} />
+        <Input label="Number of Adults" value={form.adults} onChange={(v) => update("adults", v)} type="number" min="1" />
+        <Input label="Number of Children" value={form.children} onChange={(v) => update("children", v)} type="number" min="0" />
       </div>
       <div>
         <label className="block text-sm font-medium text-stone-700 mb-1.5">Message</label>
         <textarea
           value={form.message}
           onChange={(e) => update("message", e.target.value)}
-          rows={4}
+          rows={3}
           className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-xl text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-colors resize-none"
           placeholder="Any special requirements..."
         />
@@ -118,6 +99,9 @@ export default function EnquiryForm({ className = "" }: { className?: string }) 
           Call Now
         </a>
       </div>
+      <p className="text-center text-sm text-stone-400">
+        We'll get back to you on WhatsApp with pricing, availability, and pickup/drop details.
+      </p>
     </form>
   );
 }
