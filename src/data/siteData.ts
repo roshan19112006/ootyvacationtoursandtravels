@@ -35,7 +35,7 @@ export const DESTINATIONS: Destination[] = [
     tagline: "Queen of the Nilgiris",
     description:
       "Discover the breathtaking beauty of Ooty with its rolling tea gardens, serene lakes, and misty mountain views.",
-    image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1739323019516-78a6be75d0bb?w=800&q=80",
   },
   {
     name: "Kodaikanal",
@@ -51,7 +51,7 @@ export const DESTINATIONS: Destination[] = [
     tagline: "Nature & Wildlife",
     description:
       "Experience Wayanad's ancient caves, pristine dams, wildlife sanctuaries, and lush green landscapes.",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     name: "Mysore",
@@ -67,7 +67,7 @@ export const DESTINATIONS: Destination[] = [
     tagline: "Coffee, Hills & Nature",
     description:
       "Immerse yourself in Coorg's coffee plantations, misty hills, waterfalls, and rich cultural heritage.",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     name: "Coonoor",
@@ -75,7 +75,7 @@ export const DESTINATIONS: Destination[] = [
     tagline: "Tea Gardens & Mountain Views",
     description:
       "Explore Coonoor's scenic viewpoints, tea estates, parks, and tranquil mountain vistas.",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80",
   },
 ];
 
@@ -86,57 +86,57 @@ export interface SightseeingPlace {
 }
 
 export const OOTY_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Doddabetta Peak", description: "Highest point in the Nilgiris offering panoramic mountain views.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
+  { name: "Doddabetta Peak", description: "Highest point in the Nilgiris offering panoramic mountain views.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { name: "Tea Museum", description: "Discover the history and art of tea making in Ooty.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   { name: "Wax Museum", description: "Life-size wax figures of famous personalities.", image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" },
   { name: "Botanical Garden", description: "A centuries-old garden with rare plants and floral displays.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
   { name: "Rose Garden", description: "Home to thousands of rose varieties in stunning colors.", image: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&q=80" },
   { name: "Thread Garden", description: "Unique garden featuring flowers made entirely from thread.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { name: "Ooty Lake", description: "Serene lake perfect for boating and scenic views.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Ooty Lake", description: "Serene lake perfect for boating and scenic views.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
 ];
 
 export const COONOOR_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Valley View", description: "Breathtaking panoramic views of the Nilgiri valleys.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { name: "MRC Outer View", description: "Scenic viewpoint offering stunning natural landscapes.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
-  { name: "Golf View", description: "Picturesque view of the Coonoor Golf Course.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Valley View", description: "Breathtaking panoramic views of the Nilgiri valleys.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "MRC Outer View", description: "Scenic viewpoint offering stunning natural landscapes.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { name: "Golf View", description: "Picturesque view of the Coonoor Golf Course.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { name: "Sims Park", description: "A beautiful botanical park with exotic plant species.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
   { name: "Tea Garden", description: "Lush tea plantations with stunning valley views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { name: "Lamb's Rock", description: "A popular viewpoint offering views of Coimbatore plains.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { name: "Dolphin's Nose View", description: "Unique rock formation resembling a dolphin's nose with stunning views.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Lamb's Rock", description: "A popular viewpoint offering views of Coimbatore plains.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Dolphin's Nose View", description: "Unique rock formation resembling a dolphin's nose with stunning views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
 ];
 
 export const PYKARA_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Golf View", description: "Scenic golf course views amidst the hills.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Golf View", description: "Scenic golf course views amidst the hills.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { name: "Pine Forest", description: "Towering pine trees creating a magical atmosphere.", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
   { name: "Tree Park", description: "A natural park with diverse tree species and trails.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { name: "Shooting Spot", description: "Famous film shooting location amid beautiful landscapes.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
-  { name: "Pykara Lake", description: "Tranquil lake surrounded by dense forests.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Shooting Spot", description: "Famous film shooting location amid beautiful landscapes.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Pykara Lake", description: "Tranquil lake surrounded by dense forests.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   { name: "Pykara Waterfalls", description: "Cascading waterfalls in a lush green setting.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
 ];
 
 export const AVALANCHE_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Carnhill Forest", description: "Dense forest with rich biodiversity and nature trails.", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
-  { name: "Emerald Lake Outer View", description: "Stunning views of the crystal-clear Emerald Lake.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
-  { name: "Avalanche Lake", description: "Pristine lake nestled in a stunning mountain valley.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Emerald Lake Outer View", description: "Stunning views of the crystal-clear Emerald Lake.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Avalanche Lake", description: "Pristine lake nestled in a stunning mountain valley.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   { name: "Avalanche Safari", description: "Wildlife safari through the Avalanche reserve forest.", image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" },
   { name: "Karnataka Garden", description: "Beautiful garden maintained by Karnataka Forest Department.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
 ];
 
 export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Green Valley View Point", description: "Spectacular panoramic views of the Vaigai Dam and plains.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { name: "Guna Caves", description: "Mysterious caves also known as Devil's Kitchen.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
+  { name: "Green Valley View Point", description: "Spectacular panoramic views of the Vaigai Dam and plains.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Guna Caves", description: "Mysterious caves also known as Devil's Kitchen.", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
   { name: "Pine Forest", description: "Towering pine trees creating a serene atmosphere.", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { name: "Pillar Rocks", description: "Three giant rock pillars standing 122 meters high.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { name: "Coaker's Walk", description: "Scenic pedestrian path with stunning valley views.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Pillar Rocks", description: "Three giant rock pillars standing 122 meters high.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Coaker's Walk", description: "Scenic pedestrian path with stunning valley views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   { name: "Bryant Park", description: "Well-maintained botanical garden with rare plants.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { name: "Kodaikanal Lake", description: "Star-shaped lake perfect for boating and nature walks.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Kodaikanal Lake", description: "Star-shaped lake perfect for boating and nature walks.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
 ];
 
 export const WAYANAD_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Edakkal Caves", description: "Ancient caves with prehistoric petroglyphs and stunning views.", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { name: "Karapuzha Dam", description: "Picturesque dam surrounded by lush greenery.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
-  { name: "Banasura Dam", description: "Largest earth dam in India with stunning backwaters.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
-  { name: "Pookode Lake", description: "Natural freshwater lake amidst dense forests.", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { name: "Edakkal Caves", description: "Ancient caves with prehistoric petroglyphs and stunning views.", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
+  { name: "Karapuzha Dam", description: "Picturesque dam surrounded by lush greenery.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Banasura Dam", description: "Largest earth dam in India with stunning backwaters.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Pookode Lake", description: "Natural freshwater lake amidst dense forests.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
 ];
 
 export const MYSORE_SIGHTSEEING: SightseeingPlace[] = [
@@ -172,7 +172,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 1, title: "Ooty Pickup → Ooty Local Sightseeing → Hotel Drop", details: "Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Thread Garden, Ooty Lake, Wax Museum." },
       { day: 2, title: "Hotel Pickup → Coonoor / Pykara Sightseeing → Ooty Drop", details: "Explore Coonoor or Pykara scenic spots before returning to Ooty." },
     ],
-    image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     id: "2d1n-alt",
@@ -199,7 +199,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 2, title: "Hotel Pickup → Pykara / Mudumalai Sightseeing → Hotel", details: "Visit Pykara Lake, Waterfalls, Pine Forest and optionally Mudumalai." },
       { day: 3, title: "Hotel Pickup → Coonoor Sightseeing → Ooty Drop", details: "Full Coonoor sightseeing including viewpoints, tea gardens, and parks." },
     ],
-    image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1739323019516-78a6be75d0bb?w=800&q=80",
   },
   {
     id: "4d3n",
@@ -214,7 +214,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 3, title: "Hotel Pickup → Coonoor Sightseeing → Hotel", details: "Full Coonoor sightseeing tour." },
       { day: 4, title: "Hotel Pickup → Avalanche / Kotagiri Sightseeing → Ooty Drop", details: "Explore Avalanche or Kotagiri's hidden gems." },
     ],
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     id: "ooty-kodaikanal",
@@ -246,7 +246,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 4, title: "Wayanad Hotel Pickup → Local Sightseeing → Hotel", details: "Edakkal Caves, Karapuzha Dam, Banasura Dam, Pookode Lake." },
       { day: 5, title: "Hotel Checkout → Drive to Coimbatore/Calicut → Drop", details: "Drop at airport or railway station." },
     ],
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     id: "ooty-mysore",
@@ -280,14 +280,14 @@ export const ROUND_TRIPS: RoundTrip[] = [
     title: "Package A",
     route: "Bangalore → Mysore → Coorg → Wayanad → Ooty → Kodaikanal → Coimbatore",
     destinations: ["Bangalore", "Mysore", "Coorg", "Wayanad", "Ooty", "Kodaikanal", "Coimbatore"],
-    image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
   },
   {
     id: "trip-b",
     title: "Package B",
     route: "Coimbatore → Ooty → Wayanad → Coorg → Mysore → Bangalore",
     destinations: ["Coimbatore", "Ooty", "Wayanad", "Coorg", "Mysore", "Bangalore"],
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80",
   },
   {
     id: "trip-c",
@@ -331,26 +331,26 @@ export const GALLERY_CATEGORIES = [
 
 export const GALLERY_ITEMS = [
   // Ooty
-  { id: 1, category: "Ooty", title: "Doddabetta Peak", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { id: 2, category: "Ooty", title: "Ooty Lake", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { id: 1, category: "Ooty", title: "Doddabetta Peak", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 2, category: "Ooty", title: "Ooty Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   { id: 3, category: "Ooty", title: "Botanical Garden", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
   { id: 4, category: "Ooty", title: "Rose Garden", image: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&q=80" },
   { id: 5, category: "Ooty", title: "Tea Gardens", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   // Coonoor
   { id: 6, category: "Coonoor", title: "Tea Plantations", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { id: 7, category: "Coonoor", title: "Lamb's Rock Viewpoint", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { id: 8, category: "Coonoor", title: "Dolphin's Nose", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { id: 7, category: "Coonoor", title: "Lamb's Rock Viewpoint", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 8, category: "Coonoor", title: "Dolphin's Nose", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   // Pykara
-  { id: 9, category: "Pykara", title: "Pykara Lake", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { id: 9, category: "Pykara", title: "Pykara Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   { id: 10, category: "Pykara", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
   { id: 11, category: "Pykara", title: "Pykara Waterfalls", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   // Kodaikanal
-  { id: 12, category: "Kodaikanal", title: "Pillar Rocks", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
+  { id: 12, category: "Kodaikanal", title: "Pillar Rocks", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { id: 13, category: "Kodaikanal", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   // Wayanad
-  { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=600&q=80" },
-  { id: 16, category: "Wayanad", title: "Banasura Dam", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80" },
+  { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
+  { id: 16, category: "Wayanad", title: "Banasura Dam", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
   // Mysore
   { id: 17, category: "Mysore", title: "Mysore Palace", image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=600&q=80" },
   { id: 18, category: "Mysore", title: "Brindavan Gardens", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
