@@ -128,7 +128,7 @@ export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Pine Forest", description: "Towering pine trees creating a serene atmosphere.", image: "/assets/q3.jpg" },
   { name: "Pillar Rocks", description: "Three giant rock pillars standing 122 meters high.", image: "/assets/q4.jpg" },
   { name: "Coaker's Walk", description: "Scenic pedestrian path with stunning valley views.", image: "/assets/q5.jpg" },
-  { name: "Bryant Park", description: "Well-maintained botanical garden with rare plants.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { name: "Bryant Park", description: "Well-maintained botanical garden with rare plants.", image: "/assets/q6.jpg" },
   { name: "Kodaikanal Lake", description: "Star-shaped lake perfect for boating and nature walks.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
 ];
 
