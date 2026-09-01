@@ -199,7 +199,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 2, title: "Hotel Pickup → Pykara / Mudumalai Sightseeing → Hotel", details: "Visit Pykara Lake, Waterfalls, Pine Forest and optionally Mudumalai." },
       { day: 3, title: "Hotel Pickup → Coonoor Sightseeing → Ooty Drop", details: "Full Coonoor sightseeing including viewpoints, tea gardens, and parks." },
     ],
-    image: "https://images.unsplash.com/photo-1739323019516-78a6be75d0bb?w=800&q=80",
+    image: "/assets/333.jpg",
   },
   {
     id: "4d3n",
