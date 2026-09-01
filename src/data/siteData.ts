@@ -214,7 +214,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 3, title: "Hotel Pickup → Coonoor Sightseeing → Hotel", details: "Full Coonoor sightseeing tour." },
       { day: 4, title: "Hotel Pickup → Avalanche / Kotagiri Sightseeing → Ooty Drop", details: "Explore Avalanche or Kotagiri's hidden gems." },
     ],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/assets/444.jpg",
   },
   {
     id: "ooty-kodaikanal",
