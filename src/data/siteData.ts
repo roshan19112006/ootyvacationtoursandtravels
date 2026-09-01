@@ -91,7 +91,7 @@ export const OOTY_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Wax Museum", description: "Life-size wax figures of famous personalities.", image: "/assets/313.jpg" },
   { name: "Botanical Garden", description: "A centuries-old garden with rare plants and floral displays.", image: "/assets/41.jpg" },
   { name: "Rose Garden", description: "Home to thousands of rose varieties in stunning colors.", image: "/assets/51.jpg" },
-  { name: "Thread Garden", description: "Unique garden featuring flowers made entirely from thread.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { name: "Thread Garden", description: "Unique garden featuring flowers made entirely from thread.", image: "/assets/61.jpg" },
   { name: "Ooty Lake", description: "Serene lake perfect for boating and scenic views.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
 ];
 
