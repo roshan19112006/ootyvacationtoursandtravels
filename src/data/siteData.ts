@@ -141,12 +141,12 @@ export const WAYANAD_SIGHTSEEING: SightseeingPlace[] = [
 
 export const MYSORE_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Mysore Palace", description: "Magnificent royal palace showcasing Indo-Saracenic architecture.", image: "/assets/m1.jpg" },
-  { name: "Mysore Zoo", description: "One of the oldest and best zoos in India.", image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" },
-  { name: "Fish Aquarium", description: "A diverse collection of freshwater and marine fish.", image: "https://images.unsplash.com/photo-1520302630591-fd1c67ffeabd?w=600&q=80" },
-  { name: "Chamundeshwari Temple", description: "Historic temple atop Chamundi Hills with city views.", image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=600&q=80" },
-  { name: "Sand Museum", description: "Intricate sculptures crafted entirely from sand.", image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=600&q=80" },
-  { name: "St. Philomena's Church", description: "One of the tallest churches in Asia with Gothic architecture.", image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=600&q=80" },
-  { name: "Brindavan Gardens", description: "Famous terraced garden with musical fountain shows.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { name: "Mysore Zoo", description: "One of the oldest and best zoos in India.", image: "/assets/m2.jpg" },
+  { name: "Fish Aquarium", description: "A diverse collection of freshwater and marine fish.", image: "/assets/m3.jpg" },
+  { name: "Chamundeshwari Temple", description: "Historic temple atop Chamundi Hills with city views.", image: "/assets/m4.jpg" },
+  { name: "Sand Museum", description: "Intricate sculptures crafted entirely from sand.", image: "/assets/m5.jpg" },
+  { name: "St. Philomena's Church", description: "One of the tallest churches in Asia with Gothic architecture.", image: "/assets/m6.jpg" },
+  { name: "Brindavan Gardens", description: "Famous terraced garden with musical fountain shows.", image: "/assets/m7.jpg" },
 ];
 
 export interface TourPackage {
@@ -353,7 +353,7 @@ export const GALLERY_ITEMS = [
   { id: 16, category: "Wayanad", title: "Banasura Dam", image: "/assets/p3.jpg" },
   // Mysore
   { id: 17, category: "Mysore", title: "Mysore Palace", image: "/assets/m1.jpg" },
-  { id: 18, category: "Mysore", title: "Brindavan Gardens", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { id: 18, category: "Mysore", title: "Brindavan Gardens", image: "/assets/m7.jpg" },
   // Vehicles
   { id: 19, category: "Vehicles", title: "Travel Vehicle", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
 ];
