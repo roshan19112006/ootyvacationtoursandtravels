@@ -326,34 +326,60 @@ export const SERVICES = [
 ];
 
 export const GALLERY_CATEGORIES = [
-  "All", "Ooty", "Coonoor", "Pykara", "Kodaikanal", "Wayanad", "Mysore", "Vehicles",
+  "All", "Ooty", "Coonoor", "Pykara", "Avalanche", "Kodaikanal", "Wayanad", "Mysore", "Vehicles",
 ];
 
 export const GALLERY_ITEMS = [
   // Ooty
-  { id: 1, category: "Ooty", title: "Doddabetta Peak", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 2, category: "Ooty", title: "Ooty Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { id: 3, category: "Ooty", title: "Botanical Garden", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { id: 4, category: "Ooty", title: "Rose Garden", image: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&q=80" },
-  { id: 5, category: "Ooty", title: "Tea Gardens", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { id: 1, category: "Ooty", title: "Doddabetta Peak", image: "/assets/121.jpg" },
+  { id: 2, category: "Ooty", title: "Tea Museum", image: "/assets/212.jpg" },
+  { id: 3, category: "Ooty", title: "Wax Museum", image: "/assets/313.jpg" },
+  { id: 4, category: "Ooty", title: "Botanical Garden", image: "/assets/41.jpg" },
+  { id: 5, category: "Ooty", title: "Rose Garden", image: "/assets/51.jpg" },
+  { id: 6, category: "Ooty", title: "Thread Garden", image: "/assets/61.jpg" },
+  { id: 7, category: "Ooty", title: "Ooty Lake", image: "/assets/71.jpg" },
   // Coonoor
-  { id: 6, category: "Coonoor", title: "Tea Plantations", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { id: 7, category: "Coonoor", title: "Lamb's Rock Viewpoint", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 8, category: "Coonoor", title: "Dolphin's Nose", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { id: 8, category: "Coonoor", title: "Valley View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 9, category: "Coonoor", title: "MRC Outer View", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { id: 10, category: "Coonoor", title: "Golf View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 11, category: "Coonoor", title: "Sims Park", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { id: 12, category: "Coonoor", title: "Tea Garden", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { id: 13, category: "Coonoor", title: "Lamb's Rock", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 14, category: "Coonoor", title: "Dolphin's Nose View", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   // Pykara
-  { id: 9, category: "Pykara", title: "Pykara Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { id: 10, category: "Pykara", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { id: 11, category: "Pykara", title: "Pykara Waterfalls", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 15, category: "Pykara", title: "Golf View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 16, category: "Pykara", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
+  { id: 17, category: "Pykara", title: "Tree Park", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { id: 18, category: "Pykara", title: "Shooting Spot", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { id: 19, category: "Pykara", title: "Pykara Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 20, category: "Pykara", title: "Pykara Waterfalls", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  // Avalanche
+  { id: 21, category: "Avalanche", title: "Carnhill Forest", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
+  { id: 22, category: "Avalanche", title: "Emerald Lake Outer View", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 23, category: "Avalanche", title: "Avalanche Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 24, category: "Avalanche", title: "Avalanche Safari", image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" },
+  { id: 25, category: "Avalanche", title: "Karnataka Garden", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
   // Kodaikanal
-  { id: 12, category: "Kodaikanal", title: "Pillar Rocks", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 13, category: "Kodaikanal", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "/assets/q7.jpg" },
+  { id: 26, category: "Kodaikanal", title: "Green Valley View Point", image: "/assets/q1.jpg" },
+  { id: 27, category: "Kodaikanal", title: "Guna Caves", image: "/assets/q2.jpg" },
+  { id: 28, category: "Kodaikanal", title: "Pine Forest", image: "/assets/q3.jpg" },
+  { id: 29, category: "Kodaikanal", title: "Pillar Rocks", image: "/assets/q4.jpg" },
+  { id: 30, category: "Kodaikanal", title: "Coaker's Walk", image: "/assets/q5.jpg" },
+  { id: 31, category: "Kodaikanal", title: "Bryant Park", image: "/assets/q6.jpg" },
+  { id: 32, category: "Kodaikanal", title: "Kodaikanal Lake", image: "/assets/q7.jpg" },
   // Wayanad
-  { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "/assets/p1.jpg" },
-  { id: 16, category: "Wayanad", title: "Banasura Dam", image: "/assets/p3.jpg" },
+  { id: 33, category: "Wayanad", title: "Edakkal Caves", image: "/assets/p1.jpg" },
+  { id: 34, category: "Wayanad", title: "Karapuzha Dam", image: "/assets/p2.jpg" },
+  { id: 35, category: "Wayanad", title: "Banasura Dam", image: "/assets/p3.jpg" },
+  { id: 36, category: "Wayanad", title: "Pookode Lake", image: "/assets/p4.jpg" },
   // Mysore
-  { id: 17, category: "Mysore", title: "Mysore Palace", image: "/assets/m1.jpg" },
-  { id: 18, category: "Mysore", title: "Brindavan Gardens", image: "/assets/m7.jpg" },
+  { id: 37, category: "Mysore", title: "Mysore Palace", image: "/assets/m1.jpg" },
+  { id: 38, category: "Mysore", title: "Mysore Zoo", image: "/assets/m2.jpg" },
+  { id: 39, category: "Mysore", title: "Fish Aquarium", image: "/assets/m3.jpg" },
+  { id: 40, category: "Mysore", title: "Chamundeshwari Temple", image: "/assets/m4.jpg" },
+  { id: 41, category: "Mysore", title: "Sand Museum", image: "/assets/m5.jpg" },
+  { id: 42, category: "Mysore", title: "St. Philomena's Church", image: "/assets/m6.jpg" },
+  { id: 43, category: "Mysore", title: "Brindavan Gardens", image: "/assets/m7.jpg" },
   // Vehicles
-  { id: 19, category: "Vehicles", title: "Travel Vehicle", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
+  { id: 44, category: "Vehicles", title: "Travel Vehicle", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
 ];
