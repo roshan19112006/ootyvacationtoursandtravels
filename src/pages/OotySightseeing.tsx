@@ -21,7 +21,7 @@ export default function OotySightseeing() {
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=1920&q=80"
             alt="Ooty sightseeing"
             className="w-full h-full object-cover"
           />

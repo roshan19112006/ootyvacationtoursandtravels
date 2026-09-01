@@ -47,7 +47,7 @@ export default function Landing() {
       <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=1920&q=80"
             alt="Scenic view of Ooty mountains and tea gardens"
             className="w-full h-full object-cover"
           />

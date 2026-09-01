@@ -20,7 +20,7 @@ export default function WayanadTourPackages() {
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80" alt="Wayanad tour" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=1920&q=80" alt="Wayanad tour" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-stone-900/40" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
