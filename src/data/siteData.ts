@@ -133,10 +133,10 @@ export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
 ];
 
 export const WAYANAD_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Edakkal Caves", description: "Ancient caves with prehistoric petroglyphs and stunning views.", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
-  { name: "Karapuzha Dam", description: "Picturesque dam surrounded by lush greenery.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { name: "Banasura Dam", description: "Largest earth dam in India with stunning backwaters.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { name: "Pookode Lake", description: "Natural freshwater lake amidst dense forests.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Edakkal Caves", description: "Ancient caves with prehistoric petroglyphs and stunning views.", image: "/assets/p1.jpg" },
+  { name: "Karapuzha Dam", description: "Picturesque dam surrounded by lush greenery.", image: "/assets/p2.jpg" },
+  { name: "Banasura Dam", description: "Largest earth dam in India with stunning backwaters.", image: "/assets/p3.jpg" },
+  { name: "Pookode Lake", description: "Natural freshwater lake amidst dense forests.", image: "/assets/p4.jpg" },
 ];
 
 export const MYSORE_SIGHTSEEING: SightseeingPlace[] = [
@@ -349,8 +349,8 @@ export const GALLERY_ITEMS = [
   { id: 13, category: "Kodaikanal", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
   { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "/assets/q7.jpg" },
   // Wayanad
-  { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
-  { id: 16, category: "Wayanad", title: "Banasura Dam", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "/assets/p1.jpg" },
+  { id: 16, category: "Wayanad", title: "Banasura Dam", image: "/assets/p3.jpg" },
   // Mysore
   { id: 17, category: "Mysore", title: "Mysore Palace", image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=600&q=80" },
   { id: 18, category: "Mysore", title: "Brindavan Gardens", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
