@@ -185,7 +185,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 1, title: "Ooty Pickup → Pykara + Half Ooty Sightseeing → Hotel", details: "Pykara Lake, Waterfalls, Pine Forest, and half of Ooty's attractions." },
       { day: 2, title: "Hotel Pickup → Coonoor Sightseeing + Remaining Ooty Places → Ooty Drop", details: "Complete Coonoor sightseeing and remaining Ooty attractions." },
     ],
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80",
+    image: "/assets/222.jpg",
   },
   {
     id: "3d2n",
