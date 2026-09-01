@@ -129,7 +129,7 @@ export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Pillar Rocks", description: "Three giant rock pillars standing 122 meters high.", image: "/assets/q4.jpg" },
   { name: "Coaker's Walk", description: "Scenic pedestrian path with stunning valley views.", image: "/assets/q5.jpg" },
   { name: "Bryant Park", description: "Well-maintained botanical garden with rare plants.", image: "/assets/q6.jpg" },
-  { name: "Kodaikanal Lake", description: "Star-shaped lake perfect for boating and nature walks.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Kodaikanal Lake", description: "Star-shaped lake perfect for boating and nature walks.", image: "/assets/q7.jpg" },
 ];
 
 export const WAYANAD_SIGHTSEEING: SightseeingPlace[] = [
@@ -347,7 +347,7 @@ export const GALLERY_ITEMS = [
   // Kodaikanal
   { id: 12, category: "Kodaikanal", title: "Pillar Rocks", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { id: 13, category: "Kodaikanal", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 14, category: "Kodaikanal", title: "Kodaikanal Lake", image: "/assets/q7.jpg" },
   // Wayanad
   { id: 15, category: "Wayanad", title: "Edakkal Caves", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
   { id: 16, category: "Wayanad", title: "Banasura Dam", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
