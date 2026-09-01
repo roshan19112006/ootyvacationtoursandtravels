@@ -86,7 +86,7 @@ export interface SightseeingPlace {
 }
 
 export const OOTY_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Doddabetta Peak", description: "Highest point in the Nilgiris offering panoramic mountain views.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Doddabetta Peak", description: "Highest point in the Nilgiris offering panoramic mountain views.", image: "/assets/121.jpg" },
   { name: "Tea Museum", description: "Discover the history and art of tea making in Ooty.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   { name: "Wax Museum", description: "Life-size wax figures of famous personalities.", image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" },
   { name: "Botanical Garden", description: "A centuries-old garden with rare plants and floral displays.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
