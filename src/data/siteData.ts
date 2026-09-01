@@ -172,7 +172,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 1, title: "Ooty Pickup → Ooty Local Sightseeing → Hotel Drop", details: "Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Thread Garden, Ooty Lake, Wax Museum." },
       { day: 2, title: "Hotel Pickup → Coonoor / Pykara Sightseeing → Ooty Drop", details: "Explore Coonoor or Pykara scenic spots before returning to Ooty." },
     ],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/assets/1111.jpeg",
   },
   {
     id: "2d1n-alt",
