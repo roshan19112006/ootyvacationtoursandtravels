@@ -92,7 +92,7 @@ export const OOTY_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Botanical Garden", description: "A centuries-old garden with rare plants and floral displays.", image: "/assets/41.jpg" },
   { name: "Rose Garden", description: "Home to thousands of rose varieties in stunning colors.", image: "/assets/51.jpg" },
   { name: "Thread Garden", description: "Unique garden featuring flowers made entirely from thread.", image: "/assets/61.jpg" },
-  { name: "Ooty Lake", description: "Serene lake perfect for boating and scenic views.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
+  { name: "Ooty Lake", description: "Serene lake perfect for boating and scenic views.", image: "/assets/71.jpg" },
 ];
 
 export const COONOOR_SIGHTSEEING: SightseeingPlace[] = [
