@@ -125,7 +125,7 @@ export const AVALANCHE_SIGHTSEEING: SightseeingPlace[] = [
 export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
   { name: "Green Valley View Point", description: "Spectacular panoramic views of the Vaigai Dam and plains.", image: "/assets/q1.jpg" },
   { name: "Guna Caves", description: "Mysterious caves also known as Devil's Kitchen.", image: "/assets/q2.jpg" },
-  { name: "Pine Forest", description: "Towering pine trees creating a serene atmosphere.", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
+  { name: "Pine Forest", description: "Towering pine trees creating a serene atmosphere.", image: "/assets/q3.jpg" },
   { name: "Pillar Rocks", description: "Three giant rock pillars standing 122 meters high.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { name: "Coaker's Walk", description: "Scenic pedestrian path with stunning valley views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
   { name: "Bryant Park", description: "Well-maintained botanical garden with rare plants.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
