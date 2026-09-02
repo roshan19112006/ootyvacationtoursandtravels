@@ -280,21 +280,21 @@ export const ROUND_TRIPS: RoundTrip[] = [
     title: "Package A",
     route: "Bangalore → Mysore → Coorg → Wayanad → Ooty → Kodaikanal → Coimbatore",
     destinations: ["Bangalore", "Mysore", "Coorg", "Wayanad", "Ooty", "Kodaikanal", "Coimbatore"],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/assets/mr.jpg",
   },
   {
     id: "trip-b",
     title: "Package B",
     route: "Coimbatore → Ooty → Wayanad → Coorg → Mysore → Bangalore",
     destinations: ["Coimbatore", "Ooty", "Wayanad", "Coorg", "Mysore", "Bangalore"],
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80",
+    image: "/assets/mr1.jpg",
   },
   {
     id: "trip-c",
     title: "Package C",
     route: "Coimbatore → Ooty → Kodaikanal → Madurai → Rameshwaram → Madurai Drop",
     destinations: ["Coimbatore", "Ooty", "Kodaikanal", "Madurai", "Rameshwaram"],
-    image: "https://images.unsplash.com/photo-1596394723269-e1b58a1e6d8a?w=800&q=80",
+    image: "/assets/mr2.jpg",
   },
 ];
 
