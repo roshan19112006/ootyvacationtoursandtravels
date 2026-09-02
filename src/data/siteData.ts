@@ -115,11 +115,11 @@ export const PYKARA_SIGHTSEEING: SightseeingPlace[] = [
 ];
 
 export const AVALANCHE_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Carnhill Forest", description: "Dense forest with rich biodiversity and nature trails.", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
-  { name: "Emerald Lake Outer View", description: "Stunning views of the crystal-clear Emerald Lake.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { name: "Avalanche Lake", description: "Pristine lake nestled in a stunning mountain valley.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { name: "Avalanche Safari", description: "Wildlife safari through the Avalanche reserve forest.", image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" },
-  { name: "Karnataka Garden", description: "Beautiful garden maintained by Karnataka Forest Department.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { name: "Carnhill Forest", description: "Dense forest with rich biodiversity and nature trails.", image: "/assets/a1.jpg" },
+  { name: "Emerald Lake Outer View", description: "Stunning views of the crystal-clear Emerald Lake.", image: "/assets/a2.jpg" },
+  { name: "Avalanche Lake", description: "Pristine lake nestled in a stunning mountain valley.", image: "/assets/a3.jpg" },
+  { name: "Avalanche Safari", description: "Wildlife safari through the Avalanche reserve forest.", image: "/assets/a4.jpg" },
+  { name: "Karnataka Garden", description: "Beautiful garden maintained by Karnataka Forest Department.", image: "/assets/a5.jpg" },
 ];
 
 export const KODAIKANAL_SIGHTSEEING: SightseeingPlace[] = [
@@ -354,11 +354,11 @@ export const GALLERY_ITEMS = [
   { id: 19, category: "Pykara", title: "Pykara Lake", image: "/assets/pk5.jpg" },
   { id: 20, category: "Pykara", title: "Pykara Waterfalls", image: "/assets/pk6.jpg" },
   // Avalanche
-  { id: 21, category: "Avalanche", title: "Carnhill Forest", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
-  { id: 22, category: "Avalanche", title: "Emerald Lake Outer View", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { id: 23, category: "Avalanche", title: "Avalanche Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { id: 24, category: "Avalanche", title: "Avalanche Safari", image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" },
-  { id: 25, category: "Avalanche", title: "Karnataka Garden", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
+  { id: 21, category: "Avalanche", title: "Carnhill Forest", image: "/assets/a1.jpg" },
+  { id: 22, category: "Avalanche", title: "Emerald Lake Outer View", image: "/assets/a2.jpg" },
+  { id: 23, category: "Avalanche", title: "Avalanche Lake", image: "/assets/a3.jpg" },
+  { id: 24, category: "Avalanche", title: "Avalanche Safari", image: "/assets/a4.jpg" },
+  { id: 25, category: "Avalanche", title: "Karnataka Garden", image: "/assets/a5.jpg" },
   // Kodaikanal
   { id: 26, category: "Kodaikanal", title: "Green Valley View Point", image: "/assets/q1.jpg" },
   { id: 27, category: "Kodaikanal", title: "Guna Caves", image: "/assets/q2.jpg" },
