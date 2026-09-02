@@ -18,10 +18,7 @@ export default function Gallery() {
       description="Explore our travel gallery showcasing the beautiful destinations we cover — Ooty, Coonoor, Pykara, Kodaikanal, Wayanad, Mysore and more."
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1920&q=80" alt="Travel gallery" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-stone-900/40" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Our Travel Gallery</h1>

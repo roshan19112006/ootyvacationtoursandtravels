@@ -19,14 +19,7 @@ export default function OotySightseeing() {
     >
       {/* Hero */}
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=1920&q=80"
-            alt="Ooty sightseeing"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-stone-900/40" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

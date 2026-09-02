@@ -11,8 +11,7 @@ export default function OutstationTaxi() {
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80" alt="Outstation taxi" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-stone-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
