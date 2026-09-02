@@ -6,8 +6,9 @@ import { OUTSTATION_DESTINATIONS, whatsappLink, CONTACTS } from "@/data/siteData
 export default function OutstationTaxi() {
   return (
     <PageLayout
-      title="Outstation Taxi | Ooty Vacation Tours & Travels"
-      description="Reliable outstation taxi and pickup & drop services from Ooty to destinations across South India."
+      title="Outstation Taxi Service from Ooty - Pickup & Drop Across South India"
+      description="Reliable outstation taxi and pickup & drop services from Ooty to Coimbatore, Mysore, Bangalore, Coorg, Wayanad, Kodaikanal, and more. Best taxi service in Ooty."
+      keywords="Ooty taxi service, Ooty cab service, outstation taxi Ooty, Ooty to Coimbatore taxi, Ooty to Mysore taxi, Ooty to Bangalore taxi, Ooty pickup drop, airport pickup Ooty, railway station pickup Ooty, best taxi in Ooty"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0">

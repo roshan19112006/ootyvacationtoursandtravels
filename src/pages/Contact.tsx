@@ -4,11 +4,27 @@ import PageLayout from "@/components/PageLayout";
 import EnquiryForm from "@/components/EnquiryForm";
 import { CONTACTS, whatsappLink, callLink } from "@/data/siteData";
 
+const contactStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  name: "Ooty Vacation Tours & Travels",
+  telephone: "+918056681851",
+  email: "1212ashrafashu@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ooty",
+    addressRegion: "Tamil Nadu",
+    addressCountry: "IN",
+  },
+};
+
 export default function Contact() {
   return (
     <PageLayout
-      title="Contact Us | Ooty Vacation Tours & Travels"
-      description="Contact Ooty Vacation Tours & Travels for tour packages, sightseeing, taxi service, and customized travel. WhatsApp or call us."
+      title="Contact Ooty Vacation Tours & Travels - WhatsApp, Call, Email"
+      description="Contact Ooty Vacation Tours & Travels for tour packages, sightseeing, taxi service, and customized travel. WhatsApp or call us for best travel deals in Ooty."
+      keywords="contact Ooty travels, Ooty travel agency contact, Ooty taxi booking, Ooty tour enquiry, WhatsApp Ooty travels, Ooty travel phone number"
+      structuredData={contactStructuredData}
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

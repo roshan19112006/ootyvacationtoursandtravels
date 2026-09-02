@@ -17,8 +17,9 @@ const ICONS: Record<string, React.ReactNode> = {
 export default function Services() {
   return (
     <PageLayout
-      title="Our Travel Services | Ooty Vacation Tours & Travels"
-      description="Comprehensive travel services including sightseeing, airport pickup & drop, outstation trips, auto service, homestay, and customized tours."
+      title="Travel Services in Ooty - Taxi, Sightseeing, Pickup & Drop"
+      description="Comprehensive travel services in Ooty including taxi service, sightseeing, airport pickup & drop, outstation trips, auto service, homestay, and customized tours. Best travels in Ooty."
+      keywords="Ooty taxi service, Ooty cab service, Ooty sightseeing, airport pickup Ooty, railway station pickup, outstation pickup drop, auto service Ooty, homestay Ooty, customized tours Ooty, travel services Ooty"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

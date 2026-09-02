@@ -12,11 +12,33 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const kodaikanalStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  name: "Ooty to Kodaikanal Tour Package",
+  description: "5 Days / 4 Nights tour package covering Ooty and Kodaikanal with sightseeing and accommodation",
+  touristType: ["Family", "Couples", "Groups"],
+  itinerary: {
+    "@type": "ItemList",
+    numberOfItems: 5,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Coimbatore to Ooty with Pykara Sightseeing" },
+      { "@type": "ListItem", position: 2, name: "Ooty Local Sightseeing" },
+      { "@type": "ListItem", position: 3, name: "Coonoor Sightseeing and drive to Kodaikanal" },
+      { "@type": "ListItem", position: 4, name: "Kodaikanal Local Sightseeing" },
+      { "@type": "ListItem", position: 5, name: "Kodaikanal to Coimbatore Drop" },
+    ],
+  },
+};
+
 export default function KodaikanalTourPackages() {
   return (
     <PageLayout
-      title="Kodaikanal Tour Packages | Ooty Vacation Tours & Travels"
-      description="Explore Kodaikanal's stunning attractions including Green Valley View, Guna Caves, Pine Forest, Pillar Rocks, Coaker's Walk, Bryant Park and Lake."
+      title="Kodaikanal Tour Packages from Ooty - Best Kodaikanal Sightseeing"
+      description="Explore Kodaikanal's stunning attractions including Green Valley View, Guna Caves, Pine Forest, Pillar Rocks, Coaker's Walk, Bryant Park and Lake. Book Ooty to Kodaikanal tour package."
+      keywords="Kodaikanal tour packages, Ooty to Kodaikanal tour, Kodaikanal sightseeing, Kodaikanal tourist places, Green Valley View, Guna Caves, Pine Forest, Pillar Rocks, Coaker's Walk, Bryant Park, Kodaikanal Lake, Kodaikanal taxi service"
+      ogImage="/assets/ooo1.jpg"
+      structuredData={kodaikanalStructuredData}
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

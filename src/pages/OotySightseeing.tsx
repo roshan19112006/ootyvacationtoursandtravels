@@ -11,11 +11,28 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const ootySightseeingStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Ooty Sightseeing Places",
+  description: "Popular sightseeing places in Ooty including Doddabetta Peak, Tea Museum, Botanical Garden",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, item: { "@type": "TouristAttraction", name: "Doddabetta Peak" } },
+    { "@type": "ListItem", position: 2, item: { "@type": "TouristAttraction", name: "Tea Museum" } },
+    { "@type": "ListItem", position: 3, item: { "@type": "TouristAttraction", name: "Botanical Garden" } },
+    { "@type": "ListItem", position: 4, item: { "@type": "TouristAttraction", name: "Rose Garden" } },
+    { "@type": "ListItem", position: 5, item: { "@type": "TouristAttraction", name: "Ooty Lake" } },
+  ],
+};
+
 export default function OotySightseeing() {
   return (
     <PageLayout
-      title="Ooty Sightseeing Packages | Ooty Vacation Tours & Travels"
-      description="Explore Ooty's best attractions including Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Thread Garden, Ooty Lake and more."
+      title="Ooty Sightseeing Packages - Best Local Sightseeing in Ooty"
+      description="Explore Ooty's best attractions with our sightseeing packages. Visit Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Thread Garden, Ooty Lake and more. Best Ooty local sightseeing service."
+      keywords="Ooty sightseeing, Ooty local sightseeing, sightseeing in Ooty, Ooty tourist places, Doddabetta Peak, Tea Museum, Botanical Garden Ooty, Rose Garden Ooty, Ooty Lake, Ooty sightseeing packages, Ooty cab service"
+      ogImage="/assets/121.jpg"
+      structuredData={ootySightseeingStructuredData}
     >
       {/* Hero */}
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">

@@ -11,11 +11,50 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const ootyPackagesStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Ooty Tour Packages",
+  description: "Best tour packages in Ooty for families, couples, and groups",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "TouristTrip",
+        name: "Ooty 2D/1N Tour Package",
+        description: "Perfect short getaway covering the best of Ooty with comfortable sightseeing and accommodation.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "TouristTrip",
+        name: "Ooty 3D/2N Tour Package",
+        description: "The most popular package covering Ooty, Pykara, and Coonoor with comfortable hotel stays.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "TouristTrip",
+        name: "Ooty 4D/3N Tour Package",
+        description: "An extended Ooty tour covering all attractions including Avalanche and Kotagiri.",
+      },
+    },
+  ],
+};
+
 export default function OotyTourPackages() {
   return (
     <PageLayout
-      title="Ooty Tour Packages | Best Ooty Tour Packages & Sightseeing"
-      description="Book the best Ooty tour packages with Ooty Vacation Tours & Travels. 2D/1N, 3D/2N, 4D/3N packages with sightseeing, accommodation, and transport."
+      title="Best Ooty Tour Packages - 2D/1N, 3D/2N, 4D/3N - Ooty Vacation Tours"
+      description="Book the best Ooty tour packages with Ooty Vacation Tours & Travels. 2D/1N, 3D/2N, 4D/3N packages with sightseeing, accommodation, and transport. Best Ooty family tour packages and honeymoon packages."
+      keywords="Ooty tour packages, Ooty vacation packages, Ooty family tour packages, Ooty honeymoon packages, 2 day Ooty tour, 3 day Ooty tour, Ooty sightseeing packages, Ooty cab service, best tour packages in Ooty"
+      ogImage="/assets/1111.jpeg"
+      structuredData={ootyPackagesStructuredData}
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

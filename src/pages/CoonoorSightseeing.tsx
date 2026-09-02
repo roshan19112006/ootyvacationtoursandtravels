@@ -14,8 +14,9 @@ const fadeUp = {
 export default function CoonoorSightseeing() {
   return (
     <PageLayout
-      title="Coonoor Sightseeing | Ooty Vacation Tours & Travels"
-      description="Explore Coonoor's scenic viewpoints, tea gardens, Sims Park, Lamb's Rock, Dolphin's Nose and more with our guided tours."
+      title="Coonoor Sightseeing - Valley View, Sims Park, Dolphin's Nose"
+      description="Explore Coonoor's scenic viewpoints, tea gardens, Sims Park, Lamb's Rock, Dolphin's Nose and more with our guided tours. Ooty to Coonoor sightseeing packages."
+      keywords="Coonoor sightseeing, Ooty to Coonoor tour, Valley View Coonoor, Sims Park, Lamb's Rock, Dolphin's Nose, tea garden Coonoor, Coonoor tourist places, Coonoor taxi service"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

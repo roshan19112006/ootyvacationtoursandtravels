@@ -14,8 +14,9 @@ const fadeUp = {
 export default function PykaraSightseeing() {
   return (
     <PageLayout
-      title="Pykara Sightseeing | Ooty Vacation Tours & Travels"
-      description="Explore Pykara's beautiful lake, waterfalls, pine forest, and shooting spots with our guided tours."
+      title="Pykara Sightseeing - Lake, Waterfalls, Pine Forest, Shooting Spot"
+      description="Explore Pykara's beautiful lake, waterfalls, pine forest, and shooting spots with our guided tours. Ooty to Pykara tour packages."
+      keywords="Pykara sightseeing, Ooty to Pykara tour, Pykara Lake, Pykara Waterfalls, Pine Forest Pykara, shooting spot Pykara, Pykara tourist places, Pykara tour packages"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

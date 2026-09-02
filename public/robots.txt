@@ -1,6 +1,14 @@
 User-agent: *
 Allow: /
-Disallow: /auth
-Disallow: /dashboard
 
-Sitemap: https://ootyvacation.com/sitemap.xml
+Sitemap: https://ootyvacationtours.com/sitemap.xml
+
+# Important pages for SEO
+# Home: Ooty tour packages, sightseeing, taxi service
+# Ooty Tour Packages: 2D/1N, 3D/2N, 4D/3N packages
+# Ooty Sightseeing: Doddabetta Peak, Tea Museum, Botanical Garden
+# Kodaikanal Tour Packages: Ooty to Kodaikanal tour
+# Wayanad Tour Packages: Ooty to Wayanad tour
+# Mysore Tour Packages: Ooty to Mysore tour
+# Services: Taxi service, sightseeing, pickup drop
+# Contact: WhatsApp, phone, email

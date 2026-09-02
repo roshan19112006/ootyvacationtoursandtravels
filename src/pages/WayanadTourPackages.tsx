@@ -12,11 +12,22 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const wayanadStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  name: "Ooty to Wayanad Tour Package",
+  description: "5 Days / 4 Nights tour package covering Ooty and Wayanad with sightseeing and accommodation",
+  touristType: ["Family", "Couples", "Groups"],
+};
+
 export default function WayanadTourPackages() {
   return (
     <PageLayout
-      title="Wayanad Tour Packages | Ooty Vacation Tours & Travels"
-      description="Explore Wayanad's Edakkal Caves, Karapuzha Dam, Banasura Dam, and Pookode Lake with our Ooty to Wayanad tour packages."
+      title="Wayanad Tour Packages from Ooty - Best Wayanad Sightseeing"
+      description="Explore Wayanad's Edakkal Caves, Karapuzha Dam, Banasura Dam, and Pookode Lake with our Ooty to Wayanad tour packages. Book the best Wayanad tour package from Ooty."
+      keywords="Wayanad tour packages, Ooty to Wayanad tour, Wayanad sightseeing, Edakkal Caves, Karapuzha Dam, Banasura Dam, Pookode Lake, Wayanad tourist places, Wayanad taxi service, Wayanad travel packages"
+      ogImage="/assets/ww1.jpg"
+      structuredData={wayanadStructuredData}
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

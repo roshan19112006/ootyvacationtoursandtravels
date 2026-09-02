@@ -14,8 +14,9 @@ const fadeUp = {
 export default function AvalancheSightseeing() {
   return (
     <PageLayout
-      title="Avalanche Sightseeing | Ooty Vacation Tours & Travels"
-      description="Explore Avalanche's pristine forests, Emerald Lake, Avalanche Lake, and wildlife safari with our guided tours."
+      title="Avalanche Sightseeing - Emerald Lake, Avalanche Lake, Safari"
+      description="Explore Avalanche's pristine forests, Emerald Lake, Avalanche Lake, and wildlife safari with our guided tours. Ooty to Avalanche tour packages."
+      keywords="Avalanche sightseeing, Ooty to Avalanche tour, Emerald Lake Ooty, Avalanche Lake, wildlife safari Ooty, Avalanche tourist places, Carnhill Forest, Karnataka Garden"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

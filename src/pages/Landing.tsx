@@ -32,6 +32,74 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const landingStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  name: "Ooty Vacation Tours & Travels",
+  description:
+    "Best Ooty tour packages, sightseeing, taxi service, and travel packages. Book Ooty to Kodaikanal, Wayanad, Mysore, Coonoor, Pykara tours with comfortable vehicles.",
+  url: "https://ootyvacationtours.com",
+  telephone: "+918056681851",
+  email: "1212ashrafashu@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ooty",
+    addressRegion: "Tamil Nadu",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 11.4102,
+    longitude: 76.695,
+  },
+  sameAs: [],
+  priceRange: "$$",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "00:00",
+    closes: "23:59",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Ooty Tour Packages",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Ooty Tour Packages",
+          description: "2D/1N, 3D/2N, 4D/3N tour packages in Ooty",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Ooty Sightseeing",
+          description: "Local sightseeing in Ooty, Coonoor, Pykara, Avalanche",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Taxi Service in Ooty",
+          description: "Ooty taxi service, cab service, and auto service",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Outstation Tour Packages",
+          description: "Ooty to Kodaikanal, Wayanad, Mysore tour packages",
+        },
+      },
+    ],
+  },
+};
+
 export default function Landing() {
   const [galleryFilter, setGalleryFilter] = useState("All");
   const [lightbox, setLightbox] = useState<string | null>(null);
@@ -42,7 +110,14 @@ export default function Landing() {
       : GALLERY_ITEMS.filter((item) => item.category === galleryFilter);
 
   return (
-    <PageLayout>
+    <PageLayout
+      title="Best Ooty Tour Packages, Sightseeing & Travel - Ooty Vacation Tours & Travels"
+      description="Book the best Ooty tour packages, sightseeing, taxi service and travel packages. Ooty to Kodaikanal, Wayanad, Mysore, Coonoor, Pykara tours with comfortable vehicles. Best travels in Ooty."
+      keywords="Ooty tour packages, Ooty sightseeing, Ooty taxi service, Ooty cab service, best travels in Ooty, Ooty vacation packages, Ooty family tour packages, Ooty honeymoon packages, Coonoor sightseeing, Pykara tour, Kodaikanal tour, Wayanad tour, Mysore tour, Ooty local sightseeing, Ooty to Kodaikanal tour, Ooty to Wayanad tour, Ooty to Mysore tour, Ooty to Coonoor tour, taxi in Ooty, travel in Ooty, sightseeing in Ooty"
+      ogImage="/assets/oo1.jpg"
+      ogUrl="https://ootyvacationtours.com"
+      structuredData={landingStructuredData}
+    >
       {/* ========== HERO ========== */}
       <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">

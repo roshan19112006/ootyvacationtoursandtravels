@@ -14,8 +14,9 @@ export default function Gallery() {
 
   return (
     <PageLayout
-      title="Travel Gallery | Ooty Vacation Tours & Travels"
-      description="Explore our travel gallery showcasing the beautiful destinations we cover — Ooty, Coonoor, Pykara, Kodaikanal, Wayanad, Mysore and more."
+      title="Travel Gallery - Photos of Ooty, Kodaikanal, Wayanad, Mysore"
+      description="Explore our travel gallery showcasing the beautiful destinations we cover — Ooty, Coonoor, Pykara, Kodaikanal, Wayanad, Mysore and more. View photos of tourist places in Ooty."
+      keywords="Ooty photos, Ooty gallery, Ooty tourist places photos, Kodaikanal photos, Wayanad photos, Mysore Palace photos, travel gallery Ooty, sightseeing photos Ooty"
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />

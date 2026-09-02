@@ -1,81 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ootyvacation.com/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/ooty-tour-packages</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/ooty-tour-packages</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/ooty-sightseeing</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/ooty-sightseeing</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/coonoor-sightseeing</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/kodaikanal-tour-packages</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/pykara-sightseeing</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/wayanad-tour-packages</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/avalanche-sightseeing</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://ootyvacationtours.com/mysore-tour-packages</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/kodaikanal-tour-packages</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ootyvacation.com/wayanad-tour-packages</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ootyvacation.com/mysore-tour-packages</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ootyvacation.com/outstation-taxi</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://ootyvacationtours.com/services</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/services</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ootyvacation.com/gallery</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://ootyvacationtours.com/gallery</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ootyvacation.com/contact</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://ootyvacationtours.com/contact</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ootyvacationtours.com/outstation-taxi</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

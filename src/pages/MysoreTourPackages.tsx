@@ -12,11 +12,22 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const mysoreStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  name: "Ooty to Mysore Tour Package",
+  description: "5 Days / 4 Nights tour package covering Ooty and Mysore with sightseeing and accommodation",
+  touristType: ["Family", "Couples", "Groups"],
+};
+
 export default function MysoreTourPackages() {
   return (
     <PageLayout
-      title="Mysore Tour Packages | Ooty Vacation Tours & Travels"
-      description="Explore Mysore Palace, Zoo, Chamundeshwari Temple, Brindavan Gardens and more with our Ooty to Mysore tour packages."
+      title="Mysore Tour Packages from Ooty - Mysore Palace Sightseeing"
+      description="Explore Mysore Palace, Zoo, Chamundeshwari Temple, Brindavan Gardens and more with our Ooty to Mysore tour packages. Book the best Mysore sightseeing package."
+      keywords="Mysore tour packages, Ooty to Mysore tour, Mysore sightseeing, Mysore Palace, Mysore Zoo, Chamundeshwari Temple, Brindavan Gardens, Mysore tourist places, Mysore travel packages, Mysore taxi service"
+      ogImage="/assets/kv4.jpg"
+      structuredData={mysoreStructuredData}
     >
       <section className="relative h-64 sm:h-80 lg:h-96 flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-stone-900" />
