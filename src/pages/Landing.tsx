@@ -394,50 +394,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ========== DESTINATION EXPLORER ========== */}
-      <section className="py-16 lg:py-24 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="text-center mb-14">
-            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Explore South India's Beautiful Destinations
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {DESTINATIONS.map((dest, i) => (
-              <motion.div
-                key={dest.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative overflow-hidden rounded-2xl h-72 cursor-pointer"
-              >
-                <img
-                  src={dest.image}
-                  alt={dest.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-emerald-400 text-sm font-medium mb-1">{dest.tagline}</p>
-                  <h3 className="text-2xl font-bold text-white mb-2">{dest.name}</h3>
-                  <p className="text-sm text-stone-300 mb-3 line-clamp-2">{dest.description}</p>
-                  <Link
-                    to={dest.slug === "ooty" ? "/ooty-sightseeing" : `/${dest.slug}-tour-packages`}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
-                  >
-                    Explore
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ========== OUTSTATION ========== */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
