@@ -13,13 +13,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col leading-tight shrink-0">
-            <span className="text-lg lg:text-xl font-bold text-emerald-800 tracking-tight">
-              OOTY VACATION
-            </span>
-            <span className="text-[10px] lg:text-xs font-medium text-stone-500 tracking-widest uppercase">
-              Tours & Travels
-            </span>
+          <Link to="/" className="flex items-center shrink-0">
+            <img
+              src="/assets/Igg.jpeg"
+              alt="Ooty Vacation Tours & Travels"
+              className="h-10 lg:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}

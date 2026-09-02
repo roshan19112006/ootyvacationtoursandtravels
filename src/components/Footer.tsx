@@ -11,12 +11,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <h3 className="text-xl font-bold text-white tracking-tight">
-                OOTY VACATION
-              </h3>
-              <p className="text-xs font-medium text-stone-400 tracking-widest uppercase">
-                Tours & Travels
-              </p>
+              <img
+                src="/assets/Igg.jpeg"
+                alt="Ooty Vacation Tours & Travels"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-sm leading-relaxed text-stone-400 mb-6">
               Your trusted travel partner for Ooty sightseeing, hill station tours, outstation trips and customized South India travel packages.
