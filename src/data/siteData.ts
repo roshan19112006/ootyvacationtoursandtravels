@@ -106,12 +106,12 @@ export const COONOOR_SIGHTSEEING: SightseeingPlace[] = [
 ];
 
 export const PYKARA_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Golf View", description: "Scenic golf course views amidst the hills.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { name: "Pine Forest", description: "Towering pine trees creating a magical atmosphere.", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { name: "Tree Park", description: "A natural park with diverse tree species and trails.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { name: "Shooting Spot", description: "Famous film shooting location amid beautiful landscapes.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { name: "Pykara Lake", description: "Tranquil lake surrounded by dense forests.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { name: "Pykara Waterfalls", description: "Cascading waterfalls in a lush green setting.", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { name: "Golf View", description: "Scenic golf course views amidst the hills.", image: "/assets/pk1.jpg" },
+  { name: "Pine Forest", description: "Towering pine trees creating a magical atmosphere.", image: "/assets/pk2.jpg" },
+  { name: "Tree Park", description: "A natural park with diverse tree species and trails.", image: "/assets/pk3.jpg" },
+  { name: "Shooting Spot", description: "Famous film shooting location amid beautiful landscapes.", image: "/assets/pk4.jpg" },
+  { name: "Pykara Lake", description: "Tranquil lake surrounded by dense forests.", image: "/assets/pk5.jpg" },
+  { name: "Pykara Waterfalls", description: "Cascading waterfalls in a lush green setting.", image: "/assets/pk6.jpg" },
 ];
 
 export const AVALANCHE_SIGHTSEEING: SightseeingPlace[] = [
@@ -347,12 +347,12 @@ export const GALLERY_ITEMS = [
   { id: 13, category: "Coonoor", title: "Lamb's Rock", image: "/assets/kv5.jpg" },
   { id: 14, category: "Coonoor", title: "Dolphin's Nose View", image: "/assets/kv6.jpg" },
   // Pykara
-  { id: 15, category: "Pykara", title: "Golf View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 16, category: "Pykara", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
-  { id: 17, category: "Pykara", title: "Tree Park", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { id: 18, category: "Pykara", title: "Shooting Spot", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 19, category: "Pykara", title: "Pykara Lake", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
-  { id: 20, category: "Pykara", title: "Pykara Waterfalls", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
+  { id: 15, category: "Pykara", title: "Golf View", image: "/assets/pk1.jpg" },
+  { id: 16, category: "Pykara", title: "Pine Forest", image: "/assets/pk2.jpg" },
+  { id: 17, category: "Pykara", title: "Tree Park", image: "/assets/pk3.jpg" },
+  { id: 18, category: "Pykara", title: "Shooting Spot", image: "/assets/pk4.jpg" },
+  { id: 19, category: "Pykara", title: "Pykara Lake", image: "/assets/pk5.jpg" },
+  { id: 20, category: "Pykara", title: "Pykara Waterfalls", image: "/assets/pk6.jpg" },
   // Avalanche
   { id: 21, category: "Avalanche", title: "Carnhill Forest", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" },
   { id: 22, category: "Avalanche", title: "Emerald Lake Outer View", image: "https://images.unsplash.com/photo-1432405972618-c6b0c0d40b2f?w=600&q=80" },
