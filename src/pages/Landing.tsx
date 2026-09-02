@@ -225,7 +225,7 @@ export default function Landing() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {TOUR_CATEGORIES.map((cat, i) => (
               <motion.div
                 key={cat.title}
@@ -238,7 +238,7 @@ export default function Landing() {
                   to={cat.link}
                   className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 hover:border-emerald-200"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-28 sm:h-48 overflow-hidden">
                     <img
                       src={cat.image}
                       alt={cat.title}
@@ -246,25 +246,20 @@ export default function Landing() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent" />
-                    <span className="absolute top-3 right-3 px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                    <span className="absolute top-2 right-2 sm:top-3 sm:right-3 px-2 py-0.5 sm:px-3 sm:py-1 bg-emerald-600 text-white text-[10px] sm:text-xs font-semibold rounded-full">
                       {cat.duration}
                     </span>
                   </div>
-                  <div className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0">
-                        {cat.icon}
-                      </div>
-                      <h3 className="text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
-                        {cat.title}
-                      </h3>
-                    </div>
-                    <p className="text-sm text-stone-500 mb-4 leading-relaxed">
+                  <div className="p-3 sm:p-5">
+                    <h3 className="text-sm sm:text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors mb-1 sm:mb-2">
+                      {cat.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-500 mb-2 sm:mb-4 leading-relaxed hidden sm:block">
                       {cat.description}
                     </p>
-                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-sm">
+                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-xs sm:text-sm">
                       View Details
-                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
@@ -286,7 +281,7 @@ export default function Landing() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {SIGHTSEEING_CATEGORIES.map((cat, i) => (
               <motion.div
                 key={cat.title}
@@ -299,7 +294,7 @@ export default function Landing() {
                   to={cat.link}
                   className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 hover:border-emerald-200"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-28 sm:h-48 overflow-hidden">
                     <img
                       src={cat.image}
                       alt={cat.title}
@@ -307,25 +302,20 @@ export default function Landing() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent" />
-                    <span className="absolute top-3 right-3 px-3 py-1 bg-white/90 text-stone-700 text-xs font-semibold rounded-full backdrop-blur-sm">
+                    <span className="absolute top-2 right-2 sm:top-3 sm:right-3 px-2 py-0.5 sm:px-3 sm:py-1 bg-white/90 text-stone-700 text-[10px] sm:text-xs font-semibold rounded-full backdrop-blur-sm">
                       {cat.places} Places
                     </span>
                   </div>
-                  <div className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0">
-                        {cat.icon}
-                      </div>
-                      <h3 className="text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
-                        {cat.title}
-                      </h3>
-                    </div>
-                    <p className="text-sm text-stone-500 mb-4 leading-relaxed">
+                  <div className="p-3 sm:p-5">
+                    <h3 className="text-sm sm:text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors mb-1 sm:mb-2">
+                      {cat.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-500 mb-2 sm:mb-4 leading-relaxed hidden sm:block">
                       {cat.description}
                     </p>
-                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-sm">
+                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-xs sm:text-sm">
                       Explore Places
-                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
