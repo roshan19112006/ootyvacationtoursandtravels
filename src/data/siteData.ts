@@ -230,7 +230,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 4, title: "Kodaikanal Hotel Pickup → Local Sightseeing → Hotel", details: "Green Valley View, Guna Caves, Pine Forest, Pillar Rocks, Coaker's Walk, Bryant Park, Lake." },
       { day: 5, title: "Hotel Checkout → Drive to Coimbatore → Drop", details: "Drive back to Coimbatore for onward journey." },
     ],
-    image: "/assets/kk1.jpg",
+    image: "/assets/ooo1.jpg",
   },
   {
     id: "ooty-wayanad",
@@ -246,7 +246,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 4, title: "Wayanad Hotel Pickup → Local Sightseeing → Hotel", details: "Edakkal Caves, Karapuzha Dam, Banasura Dam, Pookode Lake." },
       { day: 5, title: "Hotel Checkout → Drive to Coimbatore/Calicut → Drop", details: "Drop at airport or railway station." },
     ],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/assets/ww1.jpg",
   },
   {
     id: "ooty-mysore",
