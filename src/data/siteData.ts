@@ -96,13 +96,13 @@ export const OOTY_SIGHTSEEING: SightseeingPlace[] = [
 ];
 
 export const COONOOR_SIGHTSEEING: SightseeingPlace[] = [
-  { name: "Valley View", description: "Breathtaking panoramic views of the Nilgiri valleys.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { name: "MRC Outer View", description: "Scenic viewpoint offering stunning natural landscapes.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { name: "Golf View", description: "Picturesque view of the Coonoor Golf Course.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { name: "Sims Park", description: "A beautiful botanical park with exotic plant species.", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { name: "Tea Garden", description: "Lush tea plantations with stunning valley views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { name: "Lamb's Rock", description: "A popular viewpoint offering views of Coimbatore plains.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { name: "Dolphin's Nose View", description: "Unique rock formation resembling a dolphin's nose with stunning views.", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { name: "Valley View", description: "Breathtaking panoramic views of the Nilgiri valleys.", image: "/assets/kv.jpg" },
+  { name: "MRC Outer View", description: "Scenic viewpoint offering stunning natural landscapes.", image: "/assets/kv1.jpg" },
+  { name: "Golf View", description: "Picturesque view of the Coonoor Golf Course.", image: "/assets/kv2.jpg" },
+  { name: "Sims Park", description: "A beautiful botanical park with exotic plant species.", image: "/assets/kv3.jpg" },
+  { name: "Tea Garden", description: "Lush tea plantations with stunning valley views.", image: "/assets/kv4.jpg" },
+  { name: "Lamb's Rock", description: "A popular viewpoint offering views of Coimbatore plains.", image: "/assets/kv5.jpg" },
+  { name: "Dolphin's Nose View", description: "Unique rock formation resembling a dolphin's nose with stunning views.", image: "/assets/kv6.jpg" },
 ];
 
 export const PYKARA_SIGHTSEEING: SightseeingPlace[] = [
@@ -339,13 +339,13 @@ export const GALLERY_ITEMS = [
   { id: 6, category: "Ooty", title: "Thread Garden", image: "/assets/61.jpg" },
   { id: 7, category: "Ooty", title: "Ooty Lake", image: "/assets/71.jpg" },
   // Coonoor
-  { id: 8, category: "Coonoor", title: "Valley View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 9, category: "Coonoor", title: "MRC Outer View", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { id: 10, category: "Coonoor", title: "Golf View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 11, category: "Coonoor", title: "Sims Park", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" },
-  { id: 12, category: "Coonoor", title: "Tea Garden", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
-  { id: 13, category: "Coonoor", title: "Lamb's Rock", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id: 14, category: "Coonoor", title: "Dolphin's Nose View", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" },
+  { id: 8, category: "Coonoor", title: "Valley View", image: "/assets/kv.jpg" },
+  { id: 9, category: "Coonoor", title: "MRC Outer View", image: "/assets/kv1.jpg" },
+  { id: 10, category: "Coonoor", title: "Golf View", image: "/assets/kv2.jpg" },
+  { id: 11, category: "Coonoor", title: "Sims Park", image: "/assets/kv3.jpg" },
+  { id: 12, category: "Coonoor", title: "Tea Garden", image: "/assets/kv4.jpg" },
+  { id: 13, category: "Coonoor", title: "Lamb's Rock", image: "/assets/kv5.jpg" },
+  { id: 14, category: "Coonoor", title: "Dolphin's Nose View", image: "/assets/kv6.jpg" },
   // Pykara
   { id: 15, category: "Pykara", title: "Golf View", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
   { id: 16, category: "Pykara", title: "Pine Forest", image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" },
