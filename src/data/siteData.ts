@@ -326,7 +326,7 @@ export const SERVICES = [
 ];
 
 export const GALLERY_CATEGORIES = [
-  "All", "Ooty", "Coonoor", "Pykara", "Avalanche", "Kodaikanal", "Wayanad", "Mysore", "Vehicles",
+  "All", "Ooty", "Coonoor", "Pykara", "Avalanche", "Kodaikanal", "Wayanad", "Mysore", "Vehicles", "Accommodation",
 ];
 
 export const GALLERY_ITEMS = [
@@ -382,4 +382,20 @@ export const GALLERY_ITEMS = [
   { id: 43, category: "Mysore", title: "Brindavan Gardens", image: "/assets/m7.jpg" },
   // Vehicles
   { id: 44, category: "Vehicles", title: "Travel Vehicle", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
+  // Accommodation
+  { id: 45, category: "Accommodation", title: "Accommodation 1", image: "/assets/s1.jpg" },
+  { id: 46, category: "Accommodation", title: "Accommodation 2", image: "/assets/s2.jpg" },
+  { id: 47, category: "Accommodation", title: "Accommodation 3", image: "/assets/s3.jpg" },
+  { id: 48, category: "Accommodation", title: "Accommodation 4", image: "/assets/s4.jpg" },
+  { id: 49, category: "Accommodation", title: "Accommodation 5", image: "/assets/s5.jpg" },
+  { id: 50, category: "Accommodation", title: "Accommodation 6", image: "/assets/s6.jpg" },
+  { id: 51, category: "Accommodation", title: "Accommodation 7", image: "/assets/s7.jpg" },
+  { id: 52, category: "Accommodation", title: "Accommodation 8", image: "/assets/s8.jpg" },
+  { id: 53, category: "Accommodation", title: "Accommodation 9", image: "/assets/s9.jpg" },
+  { id: 54, category: "Accommodation", title: "Accommodation 10", image: "/assets/s10.jpg" },
+  { id: 55, category: "Accommodation", title: "Accommodation 11", image: "/assets/s11.jpg" },
+  { id: 56, category: "Accommodation", title: "Accommodation 12", image: "/assets/s12.jpg" },
+  { id: 57, category: "Accommodation", title: "Accommodation 13", image: "/assets/s13.jpg" },
+  { id: 58, category: "Accommodation", title: "Accommodation 14", image: "/assets/s14.jpg" },
+  { id: 59, category: "Accommodation", title: "Accommodation 15", image: "/assets/s15.jpg" },
 ];
