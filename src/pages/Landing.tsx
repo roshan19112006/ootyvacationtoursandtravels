@@ -539,6 +539,18 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* ========== BANNER IMAGE ========== */}
+      <section className="py-0 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <img
+            src="/assets/lb.jpeg"
+            alt="Ooty Vacation Tours and Travels"
+            className="w-full h-auto rounded-2xl"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       {/* ========== GALLERY ========== */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
