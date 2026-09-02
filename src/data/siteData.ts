@@ -262,7 +262,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 4, title: "Mysore Hotel Pickup → Local Sightseeing → Hotel", details: "Mysore Palace, Zoo, Chamundeshwari Temple, Brindavan Gardens." },
       { day: 5, title: "Hotel Checkout → Remaining Mysore Sightseeing → Drop", details: "Remaining attractions and drop at Mysore/Bangalore." },
     ],
-    image: "https://images.unsplash.com/photo-1600100397608-e1e5e3c7e4e3?w=800&q=80",
+    image: "/assets/kv4.jpg",
   },
 ];
 
