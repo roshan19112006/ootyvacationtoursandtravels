@@ -15,7 +15,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0">
             <img
-              src="/assets/igg.jpeg"
+              src="/assets/lgg.jpeg"
               alt="Ooty Vacation Tours & Travels"
               className="h-10 lg:h-12 w-auto object-contain"
             />

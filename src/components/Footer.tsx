@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <img
-                src="/assets/igg.jpeg"
+                src="/assets/lgg.jpeg"
                 alt="Ooty Vacation Tours & Travels"
                 className="h-12 w-auto object-contain"
               />
