@@ -2,28 +2,15 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import {
-  Star, Shield, Compass, Heart, Phone, MessageCircle, MapPin,
-  Eye, Car, Plane, Train, Home, Settings, ChevronRight, ArrowRight, Mail,
+  Phone, MessageCircle, MapPin, Eye, Mountain, TreePine, Waves,
+  Compass, Camera, ChevronRight, ArrowRight, Mail, Car,
 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import EnquiryForm from "@/components/EnquiryForm";
-import SightseeingSection from "@/components/SightseeingSection";
 import {
-  DESTINATIONS, PACKAGES, OOTY_SIGHTSEEING, COONOOR_SIGHTSEEING,
-  PYKARA_SIGHTSEEING, AVALANCHE_SIGHTSEEING, CONTACTS, whatsappLink,
-  callLink, GALLERY_CATEGORIES, GALLERY_ITEMS, SERVICES, ROUND_TRIPS,
-  OUTSTATION_DESTINATIONS,
+  CONTACTS, whatsappLink, callLink,
+  GALLERY_CATEGORIES, GALLERY_ITEMS, PACKAGES,
 } from "@/data/siteData";
-
-const SERVICE_ICONS: Record<string, React.ReactNode> = {
-  eye: <Eye className="w-6 h-6" />,
-  map: <MapPin className="w-6 h-6" />,
-  plane: <Plane className="w-6 h-6" />,
-  train: <Train className="w-6 h-6" />,
-  car: <Car className="w-6 h-6" />,
-  home: <Home className="w-6 h-6" />,
-  settings: <Settings className="w-6 h-6" />,
-};
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -60,45 +47,79 @@ const landingStructuredData = {
     opens: "00:00",
     closes: "23:59",
   },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Ooty Tour Packages",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Ooty Tour Packages",
-          description: "2D/1N, 3D/2N, 4D/3N tour packages in Ooty",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Ooty Sightseeing",
-          description: "Local sightseeing in Ooty, Coonoor, Pykara, Avalanche",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Taxi Service in Ooty",
-          description: "Ooty taxi service, cab service, and auto service",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Outstation Tour Packages",
-          description: "Ooty to Kodaikanal, Wayanad, Mysore tour packages",
-        },
-      },
-    ],
-  },
 };
+
+// Sightseeing categories with cover images and links
+const SIGHTSEEING_CATEGORIES = [
+  {
+    title: "Ooty Sightseeing",
+    description: "Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Ooty Lake & more",
+    image: "/assets/oot.jpg",
+    link: "/ooty-sightseeing",
+    icon: <Mountain className="w-6 h-6" />,
+    places: 7,
+  },
+  {
+    title: "Coonoor Sightseeing",
+    description: "Sims Park, Lamb's Rock, Dolphin's Nose, Tea Garden & scenic viewpoints",
+    image: "/assets/kv.jpg",
+    link: "/coonoor-sightseeing",
+    icon: <TreePine className="w-6 h-6" />,
+    places: 7,
+  },
+  {
+    title: "Pykara Sightseeing",
+    description: "Pykara Lake, Waterfalls, Pine Forest, Tree Park & shooting spots",
+    image: "/assets/pk1.jpg",
+    link: "/pykara-sightseeing",
+    icon: <Waves className="w-6 h-6" />,
+    places: 6,
+  },
+  {
+    title: "Avalanche Sightseeing",
+    description: "Emerald Lake, Avalanche Lake, Forest trails & pristine nature",
+    image: "/assets/a1.jpg",
+    link: "/avalanche-sightseeing",
+    icon: <Compass className="w-6 h-6" />,
+    places: 5,
+  },
+];
+
+// Tour packages with cover images and links
+const TOUR_CATEGORIES = [
+  {
+    title: "Ooty Tour Packages",
+    description: "2D/1N, 3D/2N, 4D/3N packages covering all major attractions in Ooty",
+    image: "/assets/oo1.jpg",
+    link: "/ooty-tour-packages",
+    icon: <Camera className="w-6 h-6" />,
+    duration: "2-4 Days",
+  },
+  {
+    title: "Kodaikanal Tour Packages",
+    description: "Explore the Princess of Hill Stations — lakes, caves, forests & viewpoints",
+    image: "/assets/q1.jpg",
+    link: "/kodaikanal-tour-packages",
+    icon: <Mountain className="w-6 h-6" />,
+    duration: "2-3 Days",
+  },
+  {
+    title: "Wayanad Tour Packages",
+    description: "Discover Wayanad's caves, dams, lakes & lush green landscapes",
+    image: "/assets/p1.jpg",
+    link: "/wayanad-tour-packages",
+    icon: <TreePine className="w-6 h-6" />,
+    duration: "2-3 Days",
+  },
+  {
+    title: "Mysore Tour Packages",
+    description: "Palace, Zoo, temples, gardens & the royal heritage of Mysore",
+    image: "/assets/m1.jpg",
+    link: "/mysore-tour-packages",
+    icon: <Compass className="w-6 h-6" />,
+    duration: "1-2 Days",
+  },
+];
 
 export default function Landing() {
   const [galleryFilter, setGalleryFilter] = useState("All");
@@ -192,350 +213,156 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ========== WHY CHOOSE US ========== */}
+      {/* ========== POPULAR TOUR PACKAGES ========== */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="text-center mb-14">
-            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Why Choose Ooty Vacation Tours & Travels?
-            </h2>
-            <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-              Your trusted partner for exploring the beauty of South India
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <Compass className="w-6 h-6" />,
-                title: "Local Ooty Experience",
-                desc: "Explore Ooty with local travel assistance and sightseeing knowledge.",
-              },
-              {
-                icon: <Car className="w-6 h-6" />,
-                title: "Comfortable Travel",
-                desc: "Comfortable vehicles for families, couples and groups.",
-              },
-              {
-                icon: <Heart className="w-6 h-6" />,
-                title: "Customized Packages",
-                desc: "Create your trip according to your schedule and requirements.",
-              },
-              {
-                icon: <MapPin className="w-6 h-6" />,
-                title: "Multiple Destinations",
-                desc: "Ooty, Coonoor, Pykara, Avalanche, Kodaikanal, Wayanad, Mysore and more.",
-              },
-              {
-                icon: <MessageCircle className="w-6 h-6" />,
-                title: "Easy Booking",
-                desc: "Quick booking and enquiry through WhatsApp and phone.",
-              },
-              {
-                icon: <Plane className="w-6 h-6" />,
-                title: "Pickup & Drop",
-                desc: "Pickup and drop services from airports, railway stations and major destinations.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-6 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all duration-300"
-              >
-                <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-4">
-                  {item.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-stone-900 mb-2">{item.title}</h3>
-                <p className="text-sm text-stone-500 leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ========== OOTY SIGHTSEEING ========== */}
-      <SightseeingSection
-        title="Ooty Sightseeing Packages"
-        description="Explore the best of Ooty's local attractions with our sightseeing packages"
-        places={OOTY_SIGHTSEEING}
-      />
-
-      {/* ========== COONOOR SIGHTSEEING ========== */}
-      <SightseeingSection
-        title="Coonoor Sightseeing"
-        description="Discover Coonoor's scenic viewpoints, tea gardens, and parks"
-        places={COONOOR_SIGHTSEEING}
-      />
-
-      {/* ========== PYKARA SIGHTSEEING ========== */}
-      <SightseeingSection
-        title="Pykara Sightseeing"
-        description="Experience the natural beauty of Pykara with lakes, forests, and waterfalls"
-        places={PYKARA_SIGHTSEEING}
-      />
-
-      {/* ========== AVALANCHE SIGHTSEEING ========== */}
-      <SightseeingSection
-        title="Avalanche Sightseeing"
-        description="Explore Avalanche's pristine forests, lakes, and wildlife"
-        places={AVALANCHE_SIGHTSEEING}
-      />
-
-      {/* ========== MUDUMALAI ========== */}
-      <section className="py-16 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="relative overflow-hidden rounded-3xl bg-stone-900">
-            <img
-              src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200&q=80"
-              alt="Mudumalai Jungle Safari"
-              className="w-full h-64 sm:h-80 object-cover opacity-60"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center p-8 sm:p-12">
-              <div className="max-w-lg">
-                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                  Mudumalai Jungle Safari
-                </h2>
-                <p className="text-stone-300 mb-6 leading-relaxed">
-                  Experience the natural beauty and wildlife of Mudumalai with our sightseeing
-                  and jungle safari travel options.
-                </p>
-                <a
-                  href={whatsappLink(CONTACTS.ashraf.phone, "Hi, I'm interested in the Mudumalai Jungle Safari package.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  Enquire Now
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ========== POPULAR PACKAGES ========== */}
-      <section className="py-16 lg:py-24 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
               Popular Ooty Tour Packages
             </h2>
             <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-              Choose from our carefully crafted tour packages designed to give you the best experience
+              Choose from our carefully crafted tour packages — click to view full details
             </p>
           </motion.div>
 
-          <div className="space-y-8">
-            {PACKAGES.map((pkg, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {TOUR_CATEGORIES.map((cat, i) => (
               <motion.div
-                key={pkg.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-stone-100"
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                  <div className="lg:col-span-1">
-                    <img
-                      src={pkg.image}
-                      alt={pkg.title}
-                      className="w-full h-48 lg:h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="lg:col-span-2 p-6 lg:p-8">
-                    <div className="flex flex-wrap items-center gap-3 mb-3">
-                      <h3 className="text-xl lg:text-2xl font-bold text-stone-900">
-                        {pkg.title}
-                      </h3>
-                      <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm font-medium rounded-full">
-                        {pkg.duration}
-                      </span>
-                    </div>
-                    <p className="text-stone-500 mb-4">{pkg.description}</p>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-                      {pkg.highlights.map((h) => (
-                        <div key={h} className="flex items-center gap-2 text-sm text-stone-600">
-                          <Star className="w-4 h-4 text-emerald-500 shrink-0" />
-                          {h}
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="space-y-2 mb-6">
-                      {pkg.itinerary.map((day) => (
-                        <div key={day.day} className="text-sm">
-                          <span className="font-semibold text-stone-800">Day {day.day}:</span>{" "}
-                          <span className="text-stone-500">{day.title}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="flex flex-wrap gap-3">
-                      <a
-                        href={whatsappLink(CONTACTS.ashraf.phone, `Hi, I'm interested in the ${pkg.title} (${pkg.duration}). Please share more details.`)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-colors"
-                      >
-                        <MessageCircle className="w-4 h-4" />
-                        Enquire on WhatsApp
-                      </a>
-                      <a
-                        href={callLink(CONTACTS.ashraf.phone)}
-                        className="flex items-center gap-2 px-5 py-2.5 border border-stone-200 hover:border-stone-300 text-stone-700 text-sm font-semibold rounded-xl transition-colors"
-                      >
-                        <Phone className="w-4 h-4" />
-                        Call Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ========== ROUND TRIP PACKAGES ========== */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="text-center mb-14">
-            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              South India Round Trip Packages
-            </h2>
-            <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-              Explore the best of South India with our curated round trip itineraries
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {ROUND_TRIPS.map((trip, i) => (
-              <motion.div
-                key={trip.id}
+                key={cat.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-stone-50 rounded-2xl overflow-hidden border border-stone-100 hover:shadow-lg transition-shadow"
               >
-                <img
-                  src={trip.image}
-                  alt={trip.title}
-                  className="w-full h-48 object-cover"
-                  loading="lazy"
-                />
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-stone-900 mb-3">{trip.title}</h3>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {trip.destinations.map((d, j) => (
-                      <span key={d} className="flex items-center gap-1 text-sm text-stone-600">
-                        {j > 0 && <ChevronRight className="w-3 h-3 text-stone-400" />}
-                        <span className={j === 0 || j === trip.destinations.length - 1 ? "font-semibold text-emerald-700" : ""}>
-                          {d}
-                        </span>
-                      </span>
-                    ))}
+                <Link
+                  to={cat.link}
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 hover:border-emerald-200"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={cat.image}
+                      alt={cat.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 bg-emerald-600 text-white text-xs font-semibold rounded-full">
+                      {cat.duration}
+                    </span>
                   </div>
-                  <div className="flex gap-2">
-                    <a
-                      href={whatsappLink(CONTACTS.ashraf.phone, `Hi, I'm interested in ${trip.title}: ${trip.route}`)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-lg transition-colors"
-                    >
-                      <MessageCircle className="w-4 h-4" />
-                      Enquire
-                    </a>
-                    <a
-                      href={callLink(CONTACTS.ashraf.phone)}
-                      className="flex items-center gap-2 px-4 py-2 border border-stone-200 hover:border-stone-300 text-stone-700 text-sm font-semibold rounded-lg transition-colors"
-                    >
-                      <Phone className="w-4 h-4" />
-                      Call
-                    </a>
+                  <div className="p-5">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0">
+                        {cat.icon}
+                      </div>
+                      <h3 className="text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
+                        {cat.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-stone-500 mb-4 leading-relaxed">
+                      {cat.description}
+                    </p>
+                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-sm">
+                      View Details
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ========== OUTSTATION ========== */}
-      <section className="py-16 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div {...fadeUp} className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Outstation Pickup & Drop
-            </h2>
-            <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-              Reliable pickup and drop services to destinations across South India
-            </p>
-          </motion.div>
-
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {OUTSTATION_DESTINATIONS.map((dest) => (
-              <span
-                key={dest}
-                className="px-5 py-2.5 bg-stone-100 text-stone-700 text-sm font-medium rounded-full hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
-              >
-                {dest}
-              </span>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <a
-              href={whatsappLink(CONTACTS.ashraf.phone, "Hi, I need outstation pickup/drop service. Please share details.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Enquire Now
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ========== SERVICES ========== */}
+      {/* ========== SIGHTSEEING PACKAGES ========== */}
       <section className="py-16 lg:py-24 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Our Travel Services
+              Sightseeing Packages
             </h2>
             <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-              Comprehensive travel services for a hassle-free experience
+              Explore stunning viewpoints, gardens, and attractions — click to see all places
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {SERVICES.map((service, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {SIGHTSEEING_CATEGORIES.map((cat, i) => (
               <motion.div
-                key={service.title}
+                key={cat.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="p-6 bg-white rounded-2xl border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all duration-300"
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-4">
-                  {SERVICE_ICONS[service.icon] || <Star className="w-6 h-6" />}
-                </div>
-                <h3 className="text-lg font-semibold text-stone-900 mb-2">{service.title}</h3>
-                <p className="text-sm text-stone-500 leading-relaxed">{service.description}</p>
+                <Link
+                  to={cat.link}
+                  className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 hover:border-emerald-200"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={cat.image}
+                      alt={cat.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 bg-white/90 text-stone-700 text-xs font-semibold rounded-full backdrop-blur-sm">
+                      {cat.places} Places
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0">
+                        {cat.icon}
+                      </div>
+                      <h3 className="text-lg font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
+                        {cat.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-stone-500 mb-4 leading-relaxed">
+                      {cat.description}
+                    </p>
+                    <div className="flex items-center gap-1 text-emerald-600 font-semibold text-sm">
+                      Explore Places
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ========== OUTSTATION TAXI ========== */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="relative overflow-hidden rounded-3xl bg-stone-900">
+            <img
+              src="/assets/mr.jpg"
+              alt="Outstation taxi service from Ooty"
+              className="w-full h-64 sm:h-80 object-cover opacity-50"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center p-8 sm:p-12">
+              <div className="max-w-lg">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                  Outstation Pickup & Drop
+                </h2>
+                <p className="text-stone-300 mb-6 leading-relaxed">
+                  Reliable taxi and cab services from Ooty to Kodaikanal, Wayanad, Mysore, Coimbatore and across South India.
+                </p>
+                <Link
+                  to="/outstation-taxi"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors"
+                >
+                  View All Routes
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -548,6 +375,53 @@ export default function Landing() {
             className="w-full h-auto rounded-2xl"
             loading="lazy"
           />
+        </div>
+      </section>
+
+      {/* ========== SERVICES ========== */}
+      <section className="py-16 lg:py-20 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
+              Our Travel Services
+            </h2>
+            <p className="text-lg text-stone-500 max-w-2xl mx-auto">
+              Comprehensive travel services for a hassle-free experience
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: <Eye className="w-6 h-6" />, title: "Ooty Local Sightseeing", desc: "Comfortable sightseeing around Ooty and nearby destinations." },
+              { icon: <Car className="w-6 h-6" />, title: "Outstation Pickup & Drop", desc: "Pickup and drop services across major South Indian destinations." },
+              { icon: <MapPin className="w-6 h-6" />, title: "Airport & Railway Pickup", desc: "Coimbatore, Calicut and other convenient airports and stations." },
+            ].map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="p-6 bg-white rounded-2xl border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-stone-900 mb-2">{item.title}</h3>
+                <p className="text-sm text-stone-500 leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors"
+            >
+              View All Services
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -601,6 +475,16 @@ export default function Landing() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-stone-200 hover:border-stone-300 text-stone-700 font-semibold rounded-xl transition-colors"
+            >
+              View Full Gallery
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>
