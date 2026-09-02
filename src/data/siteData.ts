@@ -230,7 +230,7 @@ export const PACKAGES: TourPackage[] = [
       { day: 4, title: "Kodaikanal Hotel Pickup → Local Sightseeing → Hotel", details: "Green Valley View, Guna Caves, Pine Forest, Pillar Rocks, Coaker's Walk, Bryant Park, Lake." },
       { day: 5, title: "Hotel Checkout → Drive to Coimbatore → Drop", details: "Drive back to Coimbatore for onward journey." },
     ],
-    image: "https://images.unsplash.com/photo-1596394723269-e1b58a1e6d8a?w=800&q=80",
+    image: "/assets/kk1.jpg",
   },
   {
     id: "ooty-wayanad",
