@@ -381,7 +381,11 @@ export const GALLERY_ITEMS = [
   { id: 42, category: "Mysore", title: "St. Philomena's Church", image: "/assets/m6.jpg" },
   { id: 43, category: "Mysore", title: "Brindavan Gardens", image: "/assets/m7.jpg" },
   // Vehicles
-  { id: 44, category: "Vehicles", title: "Travel Vehicle", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
+  { id: 44, category: "Vehicles", title: "Etios 1", image: "/assets/k1.jpeg" },
+  { id: 60, category: "Vehicles", title: "Etios 2", image: "/assets/k2.jpeg" },
+  { id: 61, category: "Vehicles", title: "Etios 3", image: "/assets/k3.jpeg" },
+  { id: 62, category: "Vehicles", title: "Etios 4", image: "/assets/k4.jpeg" },
+  { id: 63, category: "Vehicles", title: "Etios 5", image: "/assets/k5.jpeg" },
   // Accommodation
   { id: 45, category: "Accommodation", title: "Accommodation 1", image: "/assets/s1.jpeg" },
   { id: 46, category: "Accommodation", title: "Accommodation 2", image: "/assets/s2.jpeg" },
