@@ -543,7 +543,7 @@ export default function Landing() {
       <section className="py-0 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <img
-            src="/assets/bb.jpeg"
+            src="/assets/bb.jpg"
             alt="Ooty Vacation Tours and Travels"
             className="w-full h-auto rounded-2xl"
             loading="lazy"
