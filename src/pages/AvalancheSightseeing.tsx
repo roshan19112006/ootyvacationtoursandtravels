@@ -65,6 +65,21 @@ export default function AvalancheSightseeing() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Ooty to Avalanche Sightseeing — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>Explore the pristine wilderness of Avalanche with <strong>Ooty Trevio Tours & Travels</strong>. Our <strong>Ooty to Avalanche sightseeing</strong> package covers Emerald Lake, Avalanche Lake, Carnhill Forest, and Avala. Avalanche is a hidden gem near Ooty known for its untouched natural beauty and tranquil surroundings.</p>
+            <p>Book the best <strong>Avalanche sightseeing package from Ooty</strong> with comfortable AC vehicles and experienced drivers. We offer affordable <strong>Avalanche tour packages</strong> for nature lovers and adventure seekers.</p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Avalanche Sightseeing", "Ooty to Avalanche Tour", "Avalanche Tour Package", "Taxi in Ooty", "Ooty Sightseeing"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

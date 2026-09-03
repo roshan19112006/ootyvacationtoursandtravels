@@ -47,6 +47,25 @@ export default function OutstationTaxi() {
           </div>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Outstation Taxi Service from Ooty — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              <strong>Ooty Trevio Tours & Travels</strong> provides reliable and affordable <strong>outstation taxi service from Ooty</strong> to all major destinations in South India. Travel to <strong>Kodaikanal</strong>, <strong>Wayanad</strong>, <strong>Mysore</strong>, <strong>Coorg</strong>, <strong>Coimbatore</strong>, <strong>Munnar</strong>, and more in comfortable AC vehicles with experienced drivers.
+            </p>
+            <p>
+              We offer one-way drops, round-trip packages, and multi-day outstation tours from Ooty. Our fleet includes comfortable sedans and SUVs perfect for families, couples, and groups. We also provide <strong>Ooty airport pickup and drop</strong> from Coimbatore Airport and <strong>railway station transfers</strong>. Book the best <strong>outstation taxi from Ooty</strong> today.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Outstation Taxi Ooty", "Ooty Cab Service", "Ooty Taxi Service", "Taxi in Ooty", "Airport Pickup Ooty", "Ooty to Kodaikanal Taxi"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

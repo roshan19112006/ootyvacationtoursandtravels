@@ -119,6 +119,25 @@ export default function KodaikanalTourPackages() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Ooty to Kodaikanal Tour Packages — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              Explore the Princess of Hill Stations with <strong>Ooty Trevio Tours & Travels</strong>. Our <strong>Ooty to Kodaikanal tour packages</strong> include comfortable AC vehicles, experienced drivers, and customizable itineraries covering Kodaikanal Lake, Coaker's Walk, Pillar Rocks, Bryant Park, Guna Caves, Pine Forest, and more.
+            </p>
+            <p>
+              Book the best <strong>Kodaikanal tour package from Ooty</strong> with us. We offer one-way, round-trip, and multi-day <strong>Kodaikanal sightseeing packages</strong> at affordable prices. Whether you are a family, couple, or group, our <strong>Ooty to Kodaikanal taxi service</strong> ensures a comfortable journey through the scenic Western Ghats.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Ooty to Kodaikanal Tour", "Kodaikanal Tour Package", "Kodaikanal Sightseeing", "Taxi in Ooty", "Ooty Cab Service", "South India Tour"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

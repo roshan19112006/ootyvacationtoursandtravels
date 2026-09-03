@@ -157,6 +157,25 @@ export default function OotyTourPackages() {
           />
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Best Ooty Tour Packages — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              <strong>Ooty Trevio Tours & Travels</strong> offers the best <strong>Ooty tour packages</strong> for families, couples, and groups. Our <strong>Ooty vacation packages</strong> include 2D/1N, 3D/2N, and 4D/3N options with sightseeing, accommodation, and transport. Explore Doddabetta Peak, Botanical Garden, Rose Garden, Tea Museum, Wax Museum, Ooty Lake, and more.
+            </p>
+            <p>
+              We are the <strong>best travels in Ooty</strong> offering <strong>Ooty cab service</strong>, <strong>Ooty taxi service</strong>, and <strong>Ooty local sightseeing packages</strong> at affordable prices. Our comfortable vehicles and experienced local drivers ensure a safe and memorable trip to the Queen of Hill Stations. Book your <strong>Ooty tour package</strong> today via WhatsApp or call.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Ooty Tour Packages", "Ooty Family Tour", "Ooty Honeymoon Package", "Taxi in Ooty", "Ooty Sightseeing", "Ooty Vacation Packages", "Best Travels in Ooty"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

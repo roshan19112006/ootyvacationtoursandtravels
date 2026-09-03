@@ -577,6 +577,70 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* ========== SEO CONTENT SECTION ========== */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-6">
+              Ooty Trevio Tours & Travels — Best Travel Agency in Ooty
+            </h2>
+            <div className="prose prose-stone max-w-none text-stone-600 leading-relaxed space-y-4 text-sm sm:text-base">
+              <p>
+                <strong>Ooty Trevio Tours & Travels</strong> is one of the leading travel agencies in Ooty, offering the best tour packages, taxi services, and sightseeing experiences across the Nilgiris and South India. Whether you are looking for an <strong>Ooty tour package</strong>, a <strong>Ooty to Kodaikanal tour</strong>, a <strong>Ooty to Wayanad tour package</strong>, or a <strong>Ooty to Mysore tour package</strong>, we provide customized travel solutions for families, couples, and groups at affordable prices.
+              </p>
+              <p>
+                We specialize in <strong>Ooty local sightseeing</strong>, covering popular attractions like Doddabetta Peak, Botanical Garden, Rose Garden, Tea Museum, Wax Museum, Ooty Lake, and more. Our <strong>Ooty sightseeing packages</strong> are designed to give you the best experience of this beautiful hill station. For those who love offbeat destinations, our <strong>Ooty to Coonoor sightseeing</strong> tour covers Dolphin's Nose, Lamb's Rock, Sims Park, Tea Gardens, and Valley View.
+              </p>
+              <p>
+                Planning a trip to <strong>Pykara</strong>? Our <strong>Ooty to Pykara tour</strong> includes visits to Pykara Lake, Pykara Waterfalls, Pine Forest, and the scenic shooting spots. We also offer <strong>Avalanche sightseeing</strong> packages covering Emerald Lake, Avalanche Lake, and the breathtaking forest trails of the Nilgiris.
+              </p>
+              <p>
+                As the <strong>best taxi service in Ooty</strong>, we provide comfortable AC vehicles with experienced local drivers for <strong>Ooty cab service</strong>, <strong>Ooty taxi service</strong>, and outstation travel. Our fleet includes comfortable sedans and SUVs suitable for families, honeymoon couples, and group tours. We also offer <strong>airport pickup and drop</strong> services from Coimbatore Airport and <strong>railway station pickup</strong> from Ooty Railway Station.
+              </p>
+              <p>
+                Looking for <strong>Ooty family tour packages</strong> or <strong>Ooty honeymoon packages</strong>? We have ready-made and customizable packages to suit every budget. Our <strong>Ooty vacation packages</strong> include accommodation, sightseeing, transport, and everything you need for a hassle-free trip to the Queen of Hill Stations.
+              </p>
+              <p>
+                Beyond Ooty, we also organize <strong>outstation taxi services</strong> to <strong>Kodaikanal</strong>, <strong>Wayanad</strong>, <strong>Mysore</strong>, <strong>Coorg</strong>, <strong>Coimbatore</strong>, <strong>Munnar</strong>, and other popular South Indian destinations. Whether it is a one-way trip, round trip, or multi-day tour, Ooty Trevio Tours & Travels ensures a safe, comfortable, and memorable journey.
+              </p>
+            </div>
+
+            {/* SEO Keywords */}
+            <div className="mt-8 flex flex-wrap gap-2">
+              {[
+                "Taxi in Ooty",
+                "Travels in Ooty",
+                "Sightseeing in Ooty",
+                "Ooty Tour Packages",
+                "Ooty Cab Service",
+                "Ooty Taxi Service",
+                "Ooty Local Sightseeing",
+                "Ooty to Kodaikanal Tour",
+                "Ooty to Wayanad Tour",
+                "Ooty to Mysore Tour",
+                "Ooty to Coonoor Tour",
+                "Ooty to Pykara Tour",
+                "Ooty Family Tour Packages",
+                "Ooty Honeymoon Packages",
+                "Ooty Vacation Packages",
+                "Best Travels in Ooty",
+                "Outstation Taxi from Ooty",
+                "Airport Pickup Ooty",
+                "Ooty Sightseeing Packages",
+                "South India Tour Packages",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ========== LIGHTBOX ========== */}
       {lightbox && (
         <div

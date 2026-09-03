@@ -65,6 +65,21 @@ export default function CoonoorSightseeing() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Ooty to Coonoor Sightseeing — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>Explore the charming town of Coonoor with <strong>Ooty Trevio Tours & Travels</strong>. Our <strong>Ooty to Coonoor sightseeing</strong> package covers Dolphin's Nose View, Lamb's Rock, Sims Park, Tea Gardens, Valley View, Golf View, and MRC Outer View. Coonoor is a must-visit destination near Ooty known for its tea plantations and stunning viewpoints.</p>
+            <p>Book the best <strong>Coonoor sightseeing package from Ooty</strong> with comfortable AC vehicles and experienced local drivers. Contact us for affordable <strong>Coonoor tour packages</strong> and <strong>Ooty to Coonoor taxi service</strong>.</p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Coonoor Sightseeing", "Ooty to Coonoor Tour", "Coonoor Tour Package", "Taxi in Ooty", "Ooty Sightseeing"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

@@ -106,6 +106,25 @@ export default function OotySightseeing() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Best Ooty Sightseeing Packages — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              <strong>Ooty Trevio Tours & Travels</strong> offers the best <strong>Ooty sightseeing packages</strong> covering all major attractions in and around Ooty. Visit Doddabetta Peak, the highest point in the Nilgiris, the colorful Botanical Garden, the beautiful Rose Garden, the informative Tea Museum, the fascinating Wax Museum, and the scenic Ooty Lake.
+            </p>
+            <p>
+              Our <strong>Ooty local sightseeing</strong> packages include comfortable AC vehicles with experienced local drivers who know every hidden gem of Ooty. We also offer combined sightseeing packages to <strong>Coonoor</strong>, <strong>Pykara</strong>, and <strong>Avalanche</strong>. Book your <strong>Ooty sightseeing</strong> trip today for an unforgettable experience.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Ooty Sightseeing", "Ooty Local Sightseeing", "Ooty Sightseeing Packages", "Taxi in Ooty", "Best Travels in Ooty", "Ooty Tour Packages"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

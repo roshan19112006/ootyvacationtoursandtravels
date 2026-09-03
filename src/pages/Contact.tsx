@@ -96,6 +96,25 @@ export default function Contact() {
           <EnquiryForm />
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Contact the Best Travels in Ooty</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              Planning a trip to Ooty? <strong>Ooty Trevio Tours & Travels</strong> is your trusted travel partner for <strong>Ooty tour packages</strong>, <strong>Ooty sightseeing</strong>, <strong>Ooty taxi service</strong>, and <strong>Ooty cab service</strong>. Contact us for customized travel solutions including <strong>Ooty to Kodaikanal tour</strong>, <strong>Ooty to Wayanad tour package</strong>, <strong>Ooty to Mysore tour</strong>, and <strong>Ooty to Coonoor sightseeing</strong>.
+            </p>
+            <p>
+              Reach us via <strong>WhatsApp</strong> at 8056681851 or call us for instant booking. We offer <strong>Ooty local sightseeing packages</strong>, <strong>Ooty family tour packages</strong>, <strong>Ooty honeymoon packages</strong>, <strong>outstation taxi from Ooty</strong>, <strong>airport pickup and drop</strong>, and <strong>railway station transfer services</strong> across Tamil Nadu, Kerala, and Karnataka.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Taxi in Ooty", "Travels in Ooty", "Ooty Tour Packages", "Ooty Cab Service", "Ooty Sightseeing", "Best Travels in Ooty", "Airport Pickup Ooty", "Outstation Taxi Ooty"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

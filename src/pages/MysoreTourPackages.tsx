@@ -109,6 +109,25 @@ export default function MysoreTourPackages() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Ooty to Mysore Tour Packages — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>
+              Explore the royal heritage of Mysore with <strong>Ooty Trevio Tours & Travels</strong>. Our <strong>Ooty to Mysore tour packages</strong> cover Mysore Palace, Mysore Zoo, Chamundeshwari Temple, Brindavan Gardens, St. Philomena's Church, Fish Aquarium, Sand Museum, and more.
+            </p>
+            <p>
+              Book the best <strong>Mysore tour package from Ooty</strong> with us. We provide comfortable AC vehicles with experienced drivers for one-way and round-trip <strong>Mysore sightseeing packages</strong>. Contact us for affordable <strong>Mysore taxi service from Ooty</strong>.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Ooty to Mysore Tour", "Mysore Tour Package", "Mysore Sightseeing", "Taxi in Ooty", "Outstation Taxi", "South India Tour"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }

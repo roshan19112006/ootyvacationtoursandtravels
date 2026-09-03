@@ -65,6 +65,21 @@ export default function PykaraSightseeing() {
           </a>
         </div>
       </section>
+      {/* SEO Content */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-900 mb-4">Ooty to Pykara Sightseeing — Ooty Trevio Tours & Travels</h2>
+          <div className="text-stone-600 leading-relaxed space-y-3 text-sm sm:text-base">
+            <p>Discover the natural beauty of Pykara with <strong>Ooty Trevio Tours & Travels</strong>. Our <strong>Ooty to Pykara tour</strong> covers Pykara Lake, Pykara Waterfalls, Pine Forest, Tree Park, and the famous Shooting Spot. Pykara is one of the most scenic destinations near Ooty with its pristine lake and cascading waterfalls.</p>
+            <p>Book the best <strong>Pykara sightseeing package from Ooty</strong> with comfortable vehicles and knowledgeable drivers. We offer affordable <strong>Pykara tour packages</strong> for families, couples, and groups.</p>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Pykara Sightseeing", "Ooty to Pykara Tour", "Pykara Tour Package", "Taxi in Ooty", "Ooty Sightseeing"].map((tag) => (
+              <span key={tag} className="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-100">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
     </PageLayout>
   );
 }
