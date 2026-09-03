@@ -50,8 +50,8 @@ const ootyPackagesStructuredData = {
 export default function OotyTourPackages() {
   return (
     <PageLayout
-      title="Best Ooty Tour Packages - 2D/1N, 3D/2N, 4D/3N - Ooty Vacation Tours"
-      description="Book the best Ooty tour packages with Ooty Vacation Tours & Travels. 2D/1N, 3D/2N, 4D/3N packages with sightseeing, accommodation, and transport. Best Ooty family tour packages and honeymoon packages."
+      title="Best Ooty Tour Packages - 2D/1N, 3D/2N, 4D/3N - Ooty Trevio Tours"
+      description="Book the best Ooty tour packages with Ooty Trevio Tours & Travels. 2D/1N, 3D/2N, 4D/3N packages with sightseeing, accommodation, and transport. Best Ooty family tour packages and honeymoon packages."
       keywords="Ooty tour packages, Ooty vacation packages, Ooty family tour packages, Ooty honeymoon packages, 2 day Ooty tour, 3 day Ooty tour, Ooty sightseeing packages, Ooty cab service, best tour packages in Ooty"
       ogImage="/assets/1111.jpeg"
       structuredData={ootyPackagesStructuredData}

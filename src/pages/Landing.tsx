@@ -22,7 +22,7 @@ const fadeUp = {
 const landingStructuredData = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "Ooty Vacation Tours & Travels",
+  name: "Ooty Trevio Tours and Travels",
   description:
     "Best Ooty tour packages, sightseeing, taxi service, and travel packages. Book Ooty to Kodaikanal, Wayanad, Mysore, Coonoor, Pykara tours with comfortable vehicles.",
   url: "https://ootyvacationtours.com",
@@ -132,7 +132,7 @@ export default function Landing() {
 
   return (
     <PageLayout
-      title="Best Ooty Tour Packages, Sightseeing & Travel - Ooty Vacation Tours & Travels"
+      title="Best Ooty Tour Packages, Sightseeing & Travel - Ooty Trevio Tours and Travels"
       description="Book the best Ooty tour packages, sightseeing, taxi service and travel packages. Ooty to Kodaikanal, Wayanad, Mysore, Coonoor, Pykara tours with comfortable vehicles. Best travels in Ooty."
       keywords="Ooty tour packages, Ooty sightseeing, Ooty taxi service, Ooty cab service, best travels in Ooty, Ooty vacation packages, Ooty family tour packages, Ooty honeymoon packages, Coonoor sightseeing, Pykara tour, Kodaikanal tour, Wayanad tour, Mysore tour, Ooty local sightseeing, Ooty to Kodaikanal tour, Ooty to Wayanad tour, Ooty to Mysore tour, Ooty to Coonoor tour, taxi in Ooty, travel in Ooty, sightseeing in Ooty"
       ogImage="/assets/oo1.jpg"
@@ -159,7 +159,7 @@ export default function Landing() {
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Explore Ooty with{" "}
-              <span className="text-emerald-400">Ooty Vacation</span>{" "}
+              <span className="text-emerald-400">Ooty Trevio</span>{" "}
               Tours & Travels
             </h1>
             <p className="text-xl lg:text-2xl text-stone-200 font-medium mb-4">
@@ -361,7 +361,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <img
             src="/assets/bb.jpg"
-            alt="Ooty Vacation Tours and Travels"
+            alt="Ooty Trevio Tours and Travels"
             className="w-full h-auto rounded-2xl"
             loading="lazy"
           />
@@ -508,7 +508,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Contact Ooty Vacation Tours & Travels
+              Contact Ooty Trevio Tours and Travels
             </h2>
           </motion.div>
 

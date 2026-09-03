@@ -82,7 +82,7 @@ export default function EnquiryForm({
     const dest = context?.defaultDestination || form.destination;
     const pkg = form.package;
     const lines = [
-      `*New Enquiry — Ooty Vacation Tours & Travels*`,
+      `*New Enquiry — Ooty Trevio Tours and Travels*`,
       ``,
       `*What I need:* ${form.interest || "Tour Info"}`,
       `*Destination:* ${dest || "N/A"}`,

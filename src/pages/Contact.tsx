@@ -7,7 +7,7 @@ import { CONTACTS, whatsappLink, callLink } from "@/data/siteData";
 const contactStructuredData = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "Ooty Vacation Tours & Travels",
+  name: "Ooty Trevio Tours and Travels",
   telephone: "+918056681851",
   email: "1212ashrafashu@gmail.com",
   address: {
@@ -21,8 +21,8 @@ const contactStructuredData = {
 export default function Contact() {
   return (
     <PageLayout
-      title="Contact Ooty Vacation Tours & Travels - WhatsApp, Call, Email"
-      description="Contact Ooty Vacation Tours & Travels for tour packages, sightseeing, taxi service, and customized travel. WhatsApp or call us for best travel deals in Ooty."
+      title="Contact Ooty Trevio Tours and Travels - WhatsApp, Call, Email"
+      description="Contact Ooty Trevio Tours and Travels for tour packages, sightseeing, taxi service, and customized travel. WhatsApp or call us for best travel deals in Ooty."
       keywords="contact Ooty travels, Ooty travel agency contact, Ooty taxi booking, Ooty tour enquiry, WhatsApp Ooty travels, Ooty travel phone number"
       structuredData={contactStructuredData}
     >

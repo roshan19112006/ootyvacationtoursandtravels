@@ -16,7 +16,7 @@ export default function Header() {
           <Link to="/" className="flex items-center shrink-0">
             <img
               src="/assets/lgg.jpeg"
-              alt="Ooty Vacation Tours & Travels"
+              alt="Ooty Trevio Tours and Travels"
               className="h-10 lg:h-12 w-auto object-contain"
             />
           </Link>

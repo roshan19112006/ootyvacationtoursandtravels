@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="mb-4">
               <img
                 src="/assets/lgg.jpeg"
-                alt="Ooty Vacation Tours & Travels"
+                alt="Ooty Trevio Tours and Travels"
                 className="h-12 w-auto object-contain"
               />
             </div>
@@ -139,7 +139,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-stone-500">
-              © {new Date().getFullYear()} Ooty Vacation Tours & Travels. All rights reserved.
+              © {new Date().getFullYear()} Ooty Trevio Tours and Travels. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-sm text-stone-500">
               <Link to="/" className="hover:text-emerald-400 transition-colors">Home</Link>

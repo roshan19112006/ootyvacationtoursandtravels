@@ -25,7 +25,7 @@ export default function PageLayout({
   useEffect(() => {
     // Update document title
     if (title) {
-      document.title = `${title} | Ooty Vacation Tours & Travels`;
+      document.title = `${title} | Ooty Trevio Tours and Travels`;
     }
 
     // Update meta description
@@ -43,7 +43,7 @@ export default function PageLayout({
     // Update Open Graph tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle && title) {
-      ogTitle.setAttribute("content", `${title} | Ooty Vacation Tours & Travels`);
+      ogTitle.setAttribute("content", `${title} | Ooty Trevio Tours and Travels`);
     }
 
     const ogDesc = document.querySelector('meta[property="og:description"]');
@@ -64,7 +64,7 @@ export default function PageLayout({
     // Update Twitter tags
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
     if (twitterTitle && title) {
-      twitterTitle.setAttribute("content", `${title} | Ooty Vacation Tours & Travels`);
+      twitterTitle.setAttribute("content", `${title} | Ooty Trevio Tours and Travels`);
     }
 
     const twitterDesc = document.querySelector('meta[name="twitter:description"]');
